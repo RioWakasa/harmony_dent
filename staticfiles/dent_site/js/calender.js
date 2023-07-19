@@ -17,7 +17,7 @@ function setCalender(){
 	for (var i=0; i<=dateMax; i++) holidays[i] = 0;
 	
 	// 祝日(月,日)
-	var Holidays1 = new Array(1,1, 1,2, 1,9, 2,11, 2,23, 3,21, 4,29, 5,3, 5,4, 5,5, 7,17, 8,11, 9,18, 9,23, 10,9, 11,3, 11,23);
+	var Holidays1 = new Array(1,1, 1,2, 1,9, 2,11, 2,23, 3,21, 4,29, 5,3, 5,4, 5,5, 7,17, 8,11, 8,14, 8,15, 9,18, 9,23, 10,9, 11,3, 11,23);
 	var firstSunday = (startDay == 0)? 1: 8 - startDay;
 	for (i=0; i<Holidays1.length; i+=2) {
 		if (Holidays1[i] == month) {
@@ -114,7 +114,7 @@ function setCalender2(){
 	for (var i=0; i<=dateMax; i++) holidays[i] = 0;
 	
 	// 祝日(月,日)
-	var Holidays1 = new Array(1,1, 1,2, 1,9, 2,11, 2,23, 3,21, 4,29, 5,3, 5,4, 5,5, 7,17, 8,11, 9,18, 9,23, 10,9, 11,3, 11,23);
+	var Holidays1 = new Array(1,1, 1,2, 1,9, 2,11, 2,23, 3,21, 4,29, 5,3, 5,4, 5,5, 7,17, 8,11, 8,14, 8,15, 9,18, 9,23, 10,9, 11,3, 11,23);
 	var firstSunday = (startDay == 0)? 1: 8 - startDay;
 	for (i=0; i<Holidays1.length; i+=2) {
 		if (Holidays1[i] == month) {
