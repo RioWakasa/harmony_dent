@@ -1,0 +1,219 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/sub.css' %}">
+{% endblock head %}
+
+{% block content %}
+  <!-- タイトル -->
+  <div class="pagetitle">
+    <h1>
+      <span class="jp">一般歯科</span>
+      <span class="en">general</span>
+    </h1>
+  </div>
+
+  <main>
+    <!-- パンくずリスト -->
+    <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">General</li>
+      </ol>
+    </nav>
+
+    <!-- メニュー -->
+    <section id="menu" class="container">
+      <ul class="flex-wrap">
+        <li><a href="#sec01">むし歯治療</a></li>
+        <li><a href="#sec02">歯周病治療</a></li>
+      </ul>
+    </section>
+
+    <!-- 虫歯治療 -->
+    <section id="sec01" class="container pt-60">
+      <h2 class="ttl">むし歯治療</h2>
+      <div class="row flex-row-reverse">
+        <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/general/decay.jpg"></figure>
+        <div class="col-md-12 col-lg-6">
+          <p>むし歯の原因は、お口の中に存在する細菌です。食べ物のかすを養分として繁殖した特定の細菌が、酸を出して歯を溶かしていく状態を「むし歯」と呼びます。<br>
+            初期のむし歯では自覚症状がありません。しかし、放置していると歯をどんどん侵食し、激しい痛みを伴い、歯の根っこまで溶かされてしまうこともあります。<br>
+            日本人が歯を失う原因の多くは、歯周病とむし歯です。歯科医院に通い始めるきっかけとしても、むし歯の痛みが大多数を占めています。</p>
+        </div>
+      </div>
+      <div class="u-general01 mt-40">
+        <h3>むし歯の進行</h3>
+        <div class="row mb-3">
+          <figure class="col-md-12 col-lg-3">
+            <h4 class="item-ttl">C0［要観察］</h4>
+            <div><img class="img-fluid" decoding="async" src="../media/photo/general/general01.png"></div>
+          </figure>
+          <div class="col-md-12 col-lg-9">
+            <dl class="u-dl">
+              <dt>症状</dt>
+              <dd>むし歯も、ごく初期の状態であれば歯の表面のエナメル質がわずかに溶ける程度で、痛みなどの自覚症状はありません。</dd>
+              <dt>治療法</dt>
+              <dd>初期の段階であれば、適切なブラッシングを行うことによって、歯を健全な状態に戻すことも可能です。</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <figure class="col-md-12 col-lg-3">
+            <h4 class="item-ttl">C1［初期のむし歯］</h4>
+            <div><img class="img-fluid" decoding="async" src="../media/photo/general/general02.png"></div>
+          </figure>
+          <div class="col-md-12 col-lg-9">
+            <dl class="u-dl">
+              <dt>症状</dt>
+              <dd>C1と呼ばれる状態は、むし歯の進行こそ始まっているものの、まだ自覚症状が無いので、本人が気づくのは困難です。</dd>
+              <dt>治療法</dt>
+              <dd>この段階であれば、侵食された部分を最小限に削り、レジンというプラスチックを詰める治療で済みます。</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <figure class="col-md-12 col-lg-3">
+            <h4 class="item-ttl">C2［象牙質のむし歯］</h4>
+            <div><img class="img-fluid" decoding="async" src="../media/photo/general/general03.png"></div>
+          </figure>
+          <div class="col-md-12 col-lg-9">
+            <dl class="u-dl">
+              <dt>症状</dt>
+              <dd>エナメル質の内側の象牙質という部分まで、むし歯が到達した状態です。冷たいものがしみたり傷んだりします。</dd>
+              <dt>治療法</dt>
+              <dd>範囲が小さければ、削った部分をレジンというプラスチックでカバーしますが、大きくなっていれば詰め物が必要です。</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <figure class="col-md-12 col-lg-3">
+            <h4 class="item-ttl">C3［神経のむし歯］</h4>
+            <div><img class="img-fluid" decoding="async" src="../media/photo/general/general04.png"></div>
+          </figure>
+          <div class="col-md-12 col-lg-9">
+            <dl class="u-dl">
+              <dt>症状</dt>
+              <dd>むし歯が神経に達した状態です。見た目の変化は小さくても、炎症があるため激しい痛みを伴う場合があります。</dd>
+              <dt>治療法</dt>
+              <dd>神経部分に侵入した細菌を除去するために、根管治療を行う必要があります。削る量も大きいので、被せ物が必要です。</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <figure class="col-md-12 col-lg-3">
+            <h4 class="item-ttl">C4［末期のむし歯］</h4>
+            <div><img class="img-fluid" decoding="async" src="../media/photo/general/general05.png"></div>
+          </figure>
+          <div class="col-md-12 col-lg-9">
+            <dl class="u-dl">
+              <dt>症状</dt>
+              <dd>歯の露出部分のほとんどが溶けてしまい、神経も死んでしまった状態です。神経は死んでいても、歯の根の奥まで感染が進んでいる場合は、腫れや痛みは続きます。多くの場合は抜歯することになります。</dd>
+              <dt>治療法</dt>
+              <dd>抜歯後には、入れ歯・ブリッジ・インプラントの3種類から選択した対策を行います。どの方法にもメリット・デメリットはありますが、天然歯には及びません。抜歯にならないよう、早めに予防や治療に取り組みましょう。</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 歯周病治療 -->
+    <section id="sec02" class="container pt-60">
+      <h2 class="ttl">歯周病治療</h2>
+      <div class="row flex-row-reverse">
+        <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/general/periodontitis.jpg"></figure>
+        <div class="col-md-12 col-lg-6 mb-3">
+          <p>歯周病は、お口の中のプラーク（歯垢）が原因で起こります。歯周病はむし歯のように歯が悪くなるのではなく、歯の周辺の歯周組織が破壊される病気です。症状としては歯肉の腫れや出血が知られていますが、進行すると歯を支えるあごの骨が溶けていくので、歯が脱落することもあります。<br>
+          <span class="marker">日本では成人した人の8割以上がかかっているというデータもあり、日本人が歯を失う原因のトップでもあります。</span><br>
+            初期には自覚症状がほとんどないので、いつの間にか進行する病気です。<span class="marker">近年は、糖尿病や脳梗塞などの疾患に関与することも分かってきています。</span></p>
+        </div>
+      </div>
+      <div class="u-general02 mt-40">
+        <h3>歯周病の進行</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-2 mb-3">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/general/general06.png"></figure>
+            <p>歯ぐきは健康な状態であれば、ピンク色をしていて引き締まっています。</p>
+          </div>
+          <div class="col-md-6 col-lg-2 mb-3">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/general/general07.png"></figure>
+            <p>歯肉炎になると歯肉に炎症が起こり、歯ぐきが腫れてきます。</p>
+          </div>
+          <div class="col-md-6 col-lg-2 mb-3">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/general/general08.png"></figure>
+            <p>進行すると軽度歯周炎という状態になり、歯根膜や歯槽骨の破壊が始まります。</p>
+          </div>
+          <div class="col-md-6 col-lg-2 mb-3">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/general/general09.png"></figure>
+            <p>中度歯周炎です。歯槽骨が半分ほど溶け、歯がぐらつき始めます。</p>
+          </div>
+          <div class="col-md-6 col-lg-2 mb-3">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/general/general10.png"></figure>
+            <p>重度の歯周炎になると、歯が脱落してしまうこともあります。</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>歯周病と全身疾患の関係</h3>
+        <p>歯周病を放置すると、さまざまな病気の原因になります。お口のケアをして、全身の健康につなげていきましょう。</p>
+        <dl class="mt-40 u-dl">
+          <dt>心臓病</dt>
+          <dd>歯周病菌の作り出す物質が血液中に流れ、心筋梗塞や狭心症を引き起こす原因になると考えられています。</dd>
+          <dt>糖尿病</dt>
+          <dd>歯周病は糖尿病を悪化させる要因となり、糖尿病は歯周病の治癒を悪くします。</dd>
+          <dt>低体重児出産</dt>
+          <dd>歯周病になると体内に産生される物質が、血流を渡って胎盤に流入し、早産を引き起こします。</dd>
+        </dl>
+      </div>
+      <!-- プロバイオティクス -->
+      <div class="u-yellow">
+        <h4 class="u-ttl">プロバイオティクスを利用した<br class="sp-only">歯周病予防・口臭予防</h4>
+        <div class="row">
+          <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/L8020.jpg"></figure>
+          <div class="col-md-12 col-lg-6 mb-3">
+            <p><span class="red">L8020乳酸菌</span>とは歯周病・むし歯になったことのない健康な子どもの口の中から発見された<span class="red">ヒト由来の乳酸菌</span>です。正式名称は「ラクトバチルスラムノーザスKO3株」といいます。<br>
+              歯周病菌・むし歯菌の発育を阻止する<span class="red">制菌効果のある乳酸菌</span>の一種で、ヒトの口腔内から<span class="red">5種類の歯周病菌とむし歯菌・カンジダ菌を効果的に抑制</span>し、口腔内環境を健康に保ちます。</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>ブラッシング指導</h3>
+        <p><span class="green">一番大切な事は、日頃のホームケア（歯磨き）です。</span><br>
+          歯周溝にプラークが溜まってしまうと自分ではなかなか落とせないので、歯につき始めたプラークをしっかり落とす事が大切になってきます。<br>
+          歯磨きの際は、現状のブラッシングでどこが磨けていないのかをよく理解していただいた上で、ご自分に合ったブラッシングの方法を学んでいただきます。<br>
+          日頃のブラッシングによるプラークコントロールこそが、歯周病治療の第一歩です。</p>
+      </div>
+      <div class="mt-40">
+        <h3>スケーリング（歯石除去）</h3>
+        <p>歯石は歯面に付着したプラークに唾液中のリン・カルシウムが混じって石灰化したもので、表面は粗造でプラークが更に付着しやすいような構造をしており、歯に強固に付着しています。そして、強い病原性を持っています。<br>
+          スケーリングでは主に、超音波スケーラーやキュレットスケーラーを使用して取り除き、歯の表面をツルツルの状態にし、プラークが付着しにくい状態にします。</p>
+      </div>
+      <div class="mt-40">
+        <h3>フラップオペレーション（付着療法）</h3>
+        <p>歯槽骨の破壊が大きく歯周ポケットが深いような箇所は、スケーリングだけでは歯石を取り除く事が不可能です。このような場合は、歯肉を外側に開いて歯根を露出させ、細かい部分まで歯石を取り除きます。<br>
+          歯茎を切開して骨から剥離させ、直視下で歯石や感染しきった歯茎を取り除き、残った健康な部分を縫い合わせます。</p>
+      </div>
+      <div class="mt-40">
+        <h3>歯周組織再生療法</h3>
+        <p>歯周治療の目的は、歯周病の進行を止め歯周組織を健康な状態へ回復させることにあります。しかし、歯周病がある程度以上進行すると、元の状態へ回復させるのは困難または不可能になります。<br>
+          様々な研究の結果、失われた歯周組織を回復させる治療法が開発されています。それが、歯周組織再生療法と呼ばれているもので、フラップ手術の際にこれらの材料を併用して再生効果を期待します。<br>
+          以前より、<span class="green">GTR法（組織再生誘導法）・エムドゲイン</span>という方法があります。GTR法は保険適用ではありますが、歯肉と溶けた顎の骨の間に遮へい膜を置き、その遮へいスペースで歯周組織の再生を促す方法で、煩雑な手技となる欠点があります。<br>
+          エムドゲインは、フラップ手術の際に、歯が生えるときに必要なタンパク質を主成分とする薬剤を歯の根元に塗布し、歯周組織の再生を促す方法ですが、保険適用外です。<br>
+          それに加え、最近、新しい歯周組織再生療法である<span class="green">リグロス（塩基性線維芽細胞増殖因子）</span>が開発され、2016年より保険適用になりました。</p>
+        <div class="mt-40">
+          <h4 class="u-ttl">リグロスについて</h4>
+          <p>有効成分として遺伝子組み換えヒトbFGF製剤（塩基性線維芽細胞増殖因子）という成長因子を含む製剤です。これまで多くの臨床試験が行われ、安全性が確立されています。この薬剤を歯の周りの組織破壊が起こった部分に応用すると、失われた組織のもとになる細胞を増殖させるとともに、血管の新生を促すことで、歯槽骨・歯根膜・セメント質などの組織が新たにつくられ、その結果として歯周組織を再生させます。<br>
+            エムドゲインとリグロスの術式はほぼ変わりません。</p>
+          <div class="u-yellow">
+            <ul class="point">
+              <li>全身疾患や服用中薬剤・術前の診査により、適応外となる場合があります。</li>
+              <li>歯周組織の再生は、手術後の経過に個人差がありますが、一般的に半年以上の経過観察が必要とされています。</li>
+              <li>術後に適切な歯周病のメインテナンス治療ができていなければ、悪化する可能性があります。</li>
+            </ul>
+          </div>
+          <p>適応症などがありますので、お気軽にご相談ください。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

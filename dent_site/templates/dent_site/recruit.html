@@ -1,0 +1,240 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/sub.css' %}">
+{% endblock head %}
+
+{% block content %}
+<!-- タイトル -->
+<div class="pagetitle">
+  <h1>
+    <span class="jp">採用情報</span>
+    <span class="en">recruit</span>
+  </h1>
+</div>
+
+<main>
+  <!-- パンくずリスト -->
+  <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Recruit</li>
+    </ol>
+  </nav>
+
+  <!-- タイトル -->
+  <section id="sec01" class="container pt-60">
+    <h2 class="ttl red">歯科衛生士を募集中</h2>
+    <div class="text-center fw-bold">
+      <p>くつろぎの空間で、「笑顔」があふれる、
+        わかさハーモニー歯科クリニックで働きませんか。</p>
+      <p>経験が少ない方・ブランクのある方でも、歓迎します。<br>
+        少しずつ習得していただきながら、慣れていただければと思います。<br>
+        ステップアップしながらスキルを磨いていただきます。<br>
+        より良いチームを築く為、新しいスタッフを募集中です。</p>
+      <p>勤めていただいた方には、結婚しても出産しても、仕事を続けて欲しいと願っています。<br>
+        患者様の健康と笑顔のために、スタッフの『福利厚生』に力を入れており、<br>
+        できるだけ長く勤めていただきたいと考えております。</p>
+      <p>※オンライン面接も実施しております。</p>
+    </div>
+    <div class="u-recruit">
+      <p>電話での問い合わせ</p>
+      <p class="tel"><a href="tel:0869033677">086-903-3677</a></p>
+      <p class="reception_time">【受付時間】9:00～19:00</span></p>
+    </div>
+  </section>
+
+  <!-- メニュー -->
+  <section id="sec02" class="container pt-60">
+    <div id="menu">
+      <ul class="flex-wrap">
+        <li><a href="#sec04">歯科衛生士診療業務例</a></li>
+        <li><a href="#sec05">募集要項</a></li>
+        <li><a href="#sec06">福利厚生</a></li>
+        <li><a href="#sec10">応募・採用の流れ</a></li>
+        <li><a href="#sec11">教育体制</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 業務内容 -->
+  <section id="sec04" class="container pt-60">
+    <h2 class="ttl">歯科衛生士診療業務例</h2>
+    <p class="text-center">ブラッシング指導・口腔衛生指導(食事指導を含む)・歯周検査・スケーリング・SRP・P-Cur・診療補助・カウンセリングなど。<br>
+      メンテナンス業務は、担当歯科衛生士制を取り入れています。</p>
+  </section>
+
+  <!-- 募集要項 -->
+  <section id="sec05" class="container pt-60">
+    <h2 class="ttl">募集要項</h2>
+    <div class="mt-40">
+      <h3>歯科衛生士（正社員）</h3>
+      <table class="table-green table table-bordered">
+        <tbody>
+          <tr>
+            <th>勤務時間</th>
+            <td>月・火・水・金　8:30～13:00 / 15:00～19:00<br>土　8:30～12:30 / 14:00～17:00</td>
+          </tr>
+          <tr>
+            <th>月給</th>
+            <td>一般歯科スタッフ　220,000円～</td>
+          </tr>
+          <tr>
+            <th>通勤手当</th>
+            <td>実費支給 上限あり 月額10,000円</td>
+          </tr>
+          <tr>
+            <th>賞与</th>
+            <td>あり　前年度実績　年2回・計2.50月分</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mt-40">
+      <h3>歯科衛生士（パート） / 歯科助手・受付</h3>
+      <table class="table-green table table-bordered">
+        <caption>※その他詳細は、お電話にてお問い合わせください。</caption>
+        <tbody>
+          <tr>
+            <th>歯科衛生士（パート）</th>
+            <td>平日:時給1,300円～ 土曜日:時給1,500円〜</td>
+          </tr>
+          <!-- 
+          <tr>
+            <th>歯科助手・受付</th>
+            <td>平日午前（8:30～13:00/時給1,000円）</td>
+          </tr> 
+          -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 福利厚生 -->
+  <section id="sec06" class="container pt-60">
+    <h2 class="ttl">福利厚生</h2>
+    <ul class="u-yellow point">
+      <li>完全週休2日制（日曜・木曜）</li>
+      <li>年間休日120日以上（正社員）</li>
+      <li>社会保険・雇用保険・労災保険・厚生年金</li>
+      <li>交通費全額支給（月額上限10,000円）</li>
+      <li>昇給（年1回）</li>
+      <li>賞与（年2回）8月・12月</li>
+      <li>休暇：夏期休暇・年末年始休暇・有給休暇あり</li>
+      <li>セミナー参加費：全額医院が負担</li>
+    </ul>
+  </section>
+
+  <!-- メッセージ -->
+  <section id="sec07" class="container pt-60">
+    <h2 class="ttl">院長からのメッセージ</h2>
+    <div class="ratio ratio-16x9 w-75 mx-auto">
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/pCosu0rLgW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  </section>
+
+  <!-- 見学 -->
+  <section id="sec08" class="container pt-60">
+    <h3>ぜひ、医院見学に来てください！</h3>
+    <p>「どんな様子で診療を行っているのだろうか」<br>
+      「院長やスタッフとの相性は大丈夫だろうか」<br>
+      「自分に合った医院だろうか」<br>
+      このような心配があると思います。そこで、まず気軽に見学に来ていただくことをお勧めします。医院の雰囲気や実際に診療風景を見て、気軽に質問してください。<br>
+      その後、面接を受けるかどうか、じっくり考えていただければと思います。</p>
+    <p>お気軽に、ご予約ください！　スタッフ一同あなたのお越しをお待ちしています。</p>
+  </section>
+
+  <!-- 採用までの流れ -->
+  <section id="sec10" class="container pt-60">
+    <h2 class="ttl">応募・採用の流れ</h2>
+    <div class="mt-40">
+      <h3>STEP.1　応募</h3>
+      <p>下記方法でご応募お願いします。<br>
+        ・お電話（<a href="tel:0869033677" class="link">086-903-3677</a>）<br>
+        ・郵送<br>
+        ※「応募の旨を記載した添え状」と「履歴書」を必ず同封して<br>
+        〒701-0151　岡山県岡山市北区平野534-15に送ってください。</p>
+    </div>
+    <div class="mt-40">
+      <h3>STEP.2　面接日時決定</h3>
+      <p>お互いの希望にそって面接日時を調整いたします。都合の悪い日は遠慮なくおっしゃってください。</p>
+    </div>
+    <div class="mt-40">
+      <h3>STEP.3　面談</h3>
+      <p>固くならず、リラックスして来てください。面接の交通費は当日お支払いします。</p>
+    </div>
+    <div class="mt-40">
+      <h3>STEP.4　内定</h3>
+      <p>お互いの条件が合致したら採用です。</p>
+    </div>
+    <div class="mt-40">
+      <h3>STEP.5　入社</h3>
+      <p>わかさハーモニー歯科の新しい力になってください！期待しています！</p>
+    </div>
+  </section>
+
+  <!-- 教育体制 -->
+  <section id="sec11" class="container pt-60">
+    <h2 class="ttl">教育体制</h2>
+    <div class="mt-40">
+      <h3>わかさハーモニー歯科の新人歯科衛生士トレーニングシステム</h3>
+      <p class="marker">目的：臨床の基礎から勉強し、患者様の口腔ケアに責任を持てる自立した歯科衛生士を育成します。</p>
+      <div class="mt-40 u-yelow">
+        <h4 class="u-ttl">STEP.1　見学と補助</h4>
+        <ul class="point">
+          <li>歯科助手・歯科衛生士・歯科医師のそれぞれの役割を教えます。</li>
+          <li>当院の治療診療システムを教えます。</li>
+          <li>機械・器具・薬剤の使い方をスタッフのアシストをしながら、覚えていきます。</li>
+        </ul>
+      </div>
+      <div class="mt-40 u-yelow">
+        <h4 class="u-ttl">STEP.2　歯科衛生士としての素養を身につける期間</h4>
+        <ul class="point">
+          <li>模型や抜去歯牙を使ったり、同僚のアシスタントのお口を借りて、超音波スケーラー・ハンドスケーラーの使い方を実践していきます。</li>
+          <li>講習会などを利用し、DHとして最も大切なハンドスケーラーの研磨の仕方をマスターします。</li>
+          <li>歯周病のデーターの取り方・使い方を教わります。</li>
+          <li>レントゲンの読み方を教わります。</li>
+          <li>患者様へのアプローチの仕方を、歯科衛生士の専門雑誌を利用して、蓄えます。</li>
+        </ul>
+      </div>
+      <div class="mt-40 u-yelow">
+        <h4 class="u-ttl">STEP.3　DHとして仕事をしてみる期間</h4>
+        <ul class="point">
+          <li>軽度の歯周病の患者様を担当し、コミュニケーション・ポケット診査・Scalingの技術を上げていきましょう。</li>
+          <li>ポケット3～4mmの患者様のSRPを積み重ね、自信をつけていきましょう。</li>
+          <li>定期検診時に、患者様の個人データーを記録し、患者様の口腔内を一生管理していく技術を身につけましょう。</li>
+        </ul>
+      </div>
+      <div class="mt-40 u-yelow">
+        <h4 class="u-ttl">STEP.4　ドクター指導による、重度の歯周病の治療法を学ぶ期間</h4>
+        <ul class="point">
+          <li>ポケットの深さ4～6mmの診査とSRPを実行し、歯周病治療の幅を広げましょう。</li>
+          <li>G-Ect・F-opなどの外科の補助をします。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-40">
+      <h3>ママさん歯科衛生士のトレーニングシステム</h3>
+      <p class="marker">目的：歯科衛生士として、無理なく職場に再復帰し、一生働ける技術を再トレーニングする。</p>
+      <div class="mt-40 u-yelow">
+        <h4 class="u-ttl">STEP.1　見学と補助</h4>
+        <ul class="point">
+          <li>歯科助手・歯科衛生士・歯科医師のそれぞれの役割を教えます。</li>
+          <li>当院の治療診療システムを教えます。</li>
+          <li>機械・器具・薬剤の使い方をスタッフのアシストをしながら、覚えていきます。</li>
+        </ul>
+      </div>
+      <div class="mt-40 u-yelow">
+        <h4 class="u-ttl">STEP.2　先輩歯科衛生士の補助をしながら、治療技術をアップさせる期間</h4>
+        <ul class="point">
+          <li>診査の補助</li>
+          <li>Scaling・SRPの補助</li>
+          <li>歯周病の患者様を担当し、コミュニケーション・ポケット診査・Scaling、SRPの技術を上げていきましょう。</li>
+          <li>定期検診時に、患者様の個人データーを記録し、患者様の口腔内を一生管理していく技術を身につけましょう。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

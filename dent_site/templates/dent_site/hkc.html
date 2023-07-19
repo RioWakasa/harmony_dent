@@ -1,0 +1,46 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/sub.css' %}">
+{% endblock head %}
+
+{% block content %}
+<!-- タイトル -->
+<div class="pagetitle">
+  <h1>
+    <span class="jp">ハーモニーキッズクラブ</span>
+    <span class="en">hkc</span>
+  </h1>
+</div>
+
+<main>
+  <!-- パンくずリスト -->
+  <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">hkc</li>
+    </ol>
+  </nav>
+
+  <section class="container">
+    <h2 class="ttl">ハーモニーキッズクラブの<br class="sp-only">目的</h2>
+    <p>歯医者さんが大好きなお子様になっていただくため、ハーモニーキッズ クラブを作りました。</p>
+    <div class="row mt-40">
+      <div class="col-md-12 col-lg-6 mb-3">
+        <p>お子様の歯を健康に保つために</p>
+        <ul class="point">
+          <li>定期的な検診</li>
+          <li>フッ素塗布</li>
+        </ul>
+        <p>をお勧めしています。<br>
+          このクラブでは、カードを発行し、定期的な検診の履歴を残していきます。</p>
+      </div>
+      <div class="row col-md-12 col-lg-6 text-center">
+        <div class="col-md-12 col-lg-6 mb-3"><img decoding="async" class="circle" src="../media/photo/hkc/hkc01.jpg"></div>
+        <div class="col-md-12 col-lg-6"><img decoding="async" class="circle" src="../media/photo/hkc/hkc02.jpg"></div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

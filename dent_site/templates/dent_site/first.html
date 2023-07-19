@@ -1,0 +1,47 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/sub.css' %}">
+{% endblock head %}
+
+{% block content %}
+<!-- タイトル -->
+<div class="pagetitle">
+  <h1>
+    <span class="jp">初診の方</span>
+    <span class="en">first visit</span>
+  </h1>
+</div>
+
+<main class="firstPage">
+  <!-- パンくずリスト -->
+  <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">first visit</li>
+    </ol>
+  </nav>
+
+  <section id="sec01" class="container pt-60">
+    <h2 class="ttl">初めて診察を受ける方へ</h2>
+    <div class="row">
+      <div class="col-md-12 col-lg-6">
+        <div>
+          <p class=>当院では、できるだけ患者様をお待たせしないように、予約制としております。まずはご予約をお取りください。</p>
+          <div><a href="https://ssl.haisha-yoyaku.jp/s5747179/login/serviceAppoint/index?SITE_CODE=hp" target="_blank" class="fade" rel="noopener noreferrer"><img decoding="async" src="https://www.harmony-dent.com/wp-content/themes/harmony-dent.com/images/share/h-banner01.png" alt=""></a></div>
+        </div>
+        <div class="u-yellow">
+          <h4 class="u-ttl">ご来院時にお持ちいただく物</h4>
+          <ul class="point">
+            <li>健康保険証</li>
+            <li>各種（老人・公費など）受給者証</li>
+            <li>服用中のお薬がわかるもの（お薬手帳・処方箋・お薬の現物など）</li>
+          </ul>
+        </div>
+      </div>
+      <figure class="col-md-12 col-lg-6"><img class="img-fluid" decoding="async" src="../media/photo/first/first.jpg"></figure>
+    </div>
+  </section>
+</main>
+{% endblock %}

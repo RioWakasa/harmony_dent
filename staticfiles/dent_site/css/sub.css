@@ -1,0 +1,154 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+/* main */
+main {
+  line-height: 2;
+  padding-bottom: 80px;
+  background-color: rgba(173, 247, 251, 0.129);
+}
+/* 見出し */
+/* h1 */
+h1 {
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+}
+h1 .jp {
+  color: #4db56a;
+  display: block;
+  font-size: 35px;
+}
+h1 .en {
+  color: #bac329;
+  display: block;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+/* h2(チェック背景) */
+.ttl {
+  width: 55%;
+  margin: 0 auto 40px;
+  padding: 1.65rem 2rem;
+  background-color: rgba(216, 255, 165, 0.391);
+  background-image:
+    linear-gradient(90deg, rgba(166, 255, 165, 0.38) 50%, transparent 50%),
+    linear-gradient(rgba(193, 255, 165, 0.29) 50%, transparent 50%);
+  background-size: 40px 40px;
+}
+/* h3 */
+h3 {
+  color: #F26649;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 1rem .5rem;
+}
+h3:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  content: '';
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(left, #00ff8cce 0%, #00c6fdd3 100%);
+  background-image: linear-gradient(to right, #15ff005c 0%, #00fff776 100%);
+}
+/* h4,dlリストのdt（用語） */
+.u-ttl,
+.u-dl dt {
+  color: #4db56a;
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  padding: 0.5rem 1rem;
+  border-left: 4px dotted #F26649;
+}
+/* dl（用語）のdd（説明） */
+.u-dl dd {
+  margin-bottom: 15px;
+}
+
+/* コンセプトページ */
+
+/* スタッフページ */
+.dr_name .jp {
+  font-size: 23px;
+  color: #6eaa5e;
+  margin-right: 0.5em;
+}
+.dr_name .en {
+  font-size: 13px;
+}
+/* スタッフ紹介 */
+.u-staff .item-ttl {
+  color: #4db56a;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  padding: 1rem 2rem;
+  border-left: 5px dotted #F26649;
+  background: #f4f4f4;
+}
+
+/* 一般歯科 */
+/* むし歯治療画像付き説明 */
+.u-general01 .item-ttl {
+  text-align: center;
+  background: #6eaa5e;
+  color: #fff;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+/* 小児歯科 */
+
+/* 予防治療 */
+
+/* 審美治療 */
+
+/* 矯正 */
+
+/* インプラント */
+.u-faq dt {
+  font-size: 18px;
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.u-faq dt::before {
+  content: "Q.";
+  color: #4db56a;
+  font-size: 27px;
+  font-family: 'Itim', cursive;
+  position: absolute;
+  top: -12px;
+  left: 0;
+}
+
+/* 採用ページ */
+/* タイトル */
+.u-recruit {
+  background: #FFFFEF;
+  padding: 15px 50px;
+  width: 365px;
+  margin: 40px auto 0;
+}
+.reception_time {
+  display: inline-block;
+  font-size: 13px;
+}
+
+/* アクセスページ */
+.u-access .item-ttl {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* hkcページ */

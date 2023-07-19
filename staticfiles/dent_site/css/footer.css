@@ -1,0 +1,113 @@
+@charset "utf-8";
+footer {
+  border-top: 5px solid #6eaa5e;
+}
+
+.address,
+.caption {
+  font-size: 14px;
+}
+.badge,
+.privacy,
+.f-schedule,
+.copyright {
+  font-size: 12px;
+}
+
+/* マップ */
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ロゴ、住所、アクセス */
+.list {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* 電話、バナー */
+.f-tel .tel {
+  font-size: 20px;
+  font-weight: bold;
+  color: #F26649;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.f-tel .tel::after {
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #3c2809;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+.f-tel .tel:hover::after {
+  transform: scale(1, 1);
+}
+.f-banner {
+  display: inline-block;
+  width: 150px;
+  height: 45px;
+  color: green;
+  border: 5px solid green;
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0.3em 0 black;
+}
+.f-banner p span {
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+  padding: 0 13px;
+}
+.f-banner:hover {
+  transform: translateY(0.2em);
+  box-shadow: none;
+}
+
+/* スケジュール表 */
+.thead-green {
+  background-color: #dbead5;
+}
+.f-schedule td {
+  color: #F26649;
+  font-weight: bold;
+}
+.caption .color {
+  color: #F26649;
+}
+
+/* sns */
+.sns {
+  padding: 20px;
+  margin: 0 auto;
+}
+.privacy {
+  display: inline-block;
+  padding: 12px 0;
+}
+.copyright {
+  background: #dbead5;
+  font-family: Verdana;
+  padding: 12px 0;
+  line-height: 1;
+  text-align: center;
+}
+
+@media screen and (max-width: 758px) {
+  .map {
+    width: 100%;
+  }
+  .sns {
+    width: 100%;
+  }
+} 

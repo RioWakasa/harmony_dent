@@ -1,0 +1,629 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/sub.css' %}">
+{% endblock head %}
+
+{% block content %}
+  <!-- タイトル -->
+  <div class="pagetitle">
+    <h1>
+      <span class="jp">入れ歯・インプラント治療</span>
+      <span class="en">implant</span>
+    </h1>
+  </div>
+
+  <main class="implantPage">
+    <!-- パンくずリスト -->
+    <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Implant</li>
+      </ol>
+    </nav>
+
+    <!-- メニュー -->
+    <section id="menu" class="container pt-60">
+      <ul>
+        <li><a href="#sec01">入れ歯（義歯）</a></li>
+        <li><a href="#sec03">インプラント治療</a></li>
+        <li><a href="#sec11">歯科用CTについて</a></li>
+        <li><a href="#sec12">医療費控除について</a></li>
+      </ul>
+    </section>
+
+    <!-- 義歯 -->
+    <section id="sec01" class="container pt-60">
+      <h2 class="ttl">入れ歯（義歯）</h2>
+      <div class="row">
+        <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant01.jpg"></figure>
+        <div class="col-md-12 col-lg-6">
+          <p>入れ歯には、外れやすい・違和感がある・器具が目立つなど、世間一般にはマイナスのイメージが連想されがちです。<br>
+            しかし最近では、歯茎とのフィット感にこだわった入れ歯や、クラスプ（バネ）が目立たない非金属の材料を用いた入れ歯、そもそもクラスプを使わないノンクラスプデンチャー、インプラントや残った歯根を利用して行う入れ歯など、実に多種多様なニーズに沿った入れ歯装置が利用されています。</p>
+          <p>また、しっかりとした検査・診断のもと、正確な技工技術を用いて、時間をかけて適合精度の高い入れ歯を作製すれば、外れにくくモノが良く噛める快適な入れ歯を作製することが可能です。すぐ外れてしまったり、噛んだときに痛みや違和感を生じる入れ歯は、そもそも適合精度が低いと言わざるを得ません。</p>
+          <p>入れ歯治療は外から見る以上に、型合わせの精度が求められる治療です。そのため、最終的な入れ歯を作製するには、本来時間のかかる治療法だとも言えます。</p>
+        </div>
+      </div>
+      <div class="u-implant mt-40">
+        <h3>総入れ歯（フルデンチャー）の種類</h3>
+        <p>総入れ歯（フルデンチャー）にはいくつかの種類があります。健康保険の範囲であれば、平らな部分にレジンというプラスチックを使用します。自由診療であれば金属やシリコンを素材に使っていたり、インプラントを応用したりします。<br>
+          患者様のご要望はそれぞれ異なりますので、できるだけ多くの希望に沿えるように多数の種類を扱っています。</p>
+        <div class="mt-40">
+          <h4 class="u-ttl">レジン床義歯（保険診療の義歯）</h4>
+          <div class="row flex-row-reverse">
+            <figure class="col-md-12 col-lg-4 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant02.jpg"></figure>
+            <div class="col-md-12 col-lg-8">
+              <p>入れ歯の平らな部分をレジンというプラスチックで作った入れ歯です。<span class="green">保険診療の範囲で作ることができるので費用負担が少ない</span>ことや、修理がしやすいというメリットがあります。<br>
+                できるだけフィットするよう作りますが、素材の特性として薄く作るのが困難で、違和感があること・安定性が低いことがデメリットです。</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-40">
+          <h4 class="u-ttl">金属床義歯（メタルプレートデンチャー）</h4>
+          <div class="row flex-row-reverse">
+            <figure class="col-md-12 col-lg-4 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant03.jpg"></figure>
+            <div class="col-md-12 col-lg-8">
+              <p>平らな部分に金属を使っている入れ歯です。<span class="green">金属なので強度が非常に高い</span>という利点があります。また、熱伝導性が良いので、<span class="green">食べ物の温度を感じながら食事ができる</span>こと、薄く作れるので<span class="green">違和感が少ない</span>ことなどのメリットを持つ入れ歯です。<br>
+                会話もしやすく、日常への負担が少ないことを特徴としています。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="u-implant mt-40">
+        <h3>部分入れ歯（パーシャルデンチャー）の種類</h3>
+        <p>パーシャルデンチャー（部分入れ歯）は、失われた歯の粘膜部を覆う『義歯床』・入れ歯を支える『クラスプ（金具）』・『人工歯』からできています。健康保険の適用の可否によって材質が異なり、それぞれに特徴があります。<br>
+          部分入れ歯は、クラスプの維持力や義歯床の吸着力などを使ってお口の中に固定させています。取り外しができるので便利な反面、毎日のメンテナンスが必要です。</p>
+        <div class="mt-40">
+          <h4 class="u-ttl">保険診療の部分入れ歯（義歯）</h4>
+          <div class="row flex-row-reverse">
+            <figure class="col-md-12 col-lg-4 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant04.jpg"></figure>
+            <div class="col-md-12 col-lg-8">
+              <p>保険の範囲で作る部分入れ歯は、人工歯と義歯床の部分をレジンというプラスチックで作り、クラスプの部分は金属製です。<span class="green">費用負担が少ない</span>ことや、<span class="green">製作にかかる時間が短い</span>メリットがあります。<br>一方、金属のクラスプに見た目の違和感があることや、義歯床に厚みがあることで、装着時に使用上の違和感があることなどの難点もあります。</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-40">
+          <h4 class="u-ttl">自費診療の部分入れ歯（義歯）</h4>
+          <div class="row flex-row-reverse">
+            <figure class="col-md-12 col-lg-4 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant05.jpg"></figure>
+            <div class="col-md-12 col-lg-8">
+              <p>自由診療の部分入れ歯には、クラスプ（金属バネ）を見えにくくした、見た目の違和感が少ないノンクラスプデンチャー「キレイデス」を採用しています。<br>
+                <div class="u-yellow">
+                  <p>1.金属バネがなく、見た目が良い。</p>
+                  <p>2.隙間がなく食べ物がつまらない。</p>
+                  <p>3.軽くて薄いため、異物感が少ない。</p>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>料金表</h3>
+        <div>
+          <table class="table-green table table-bordered">
+          <colgroup>
+            <col width="30%">
+          </colgroup>
+            <tbody>
+              <tr>
+                <th>金属床</th>
+                <td>少数歯　110,000円（税込）<br>多数歯　165,000円（税込）</td>
+              </tr>
+              <tr>
+                <th>ノンクラスプデンチャー</th>
+                <td>少数歯　77,000円（税込）<br>多数歯　132,000円（税込）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- インプラント治療について -->
+    <section id="sec03" class="container pt-60">
+      <h2 class="ttl">インプラント治療について</h2>
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <p>インプラント治療は、入れ歯のような異物感が無いうえに、ブリッジの様に支えとなる歯を削ることがありません。歯を失った方に現在提供のできる最良の治療法です。<br>
+            ただし、適応症や注意事項があるため、気軽にご相談ください。</p>
+        </div>
+        <figure class="col-md-12 col-lg-4"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant06.jpg"></figure>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <p>インプラント手術を行う際には、滅菌された専用のディスポーザブルの手術着を着用して行います。もちろん器具なども完全に滅菌しています。</p>
+        </div>
+        <figure class="col-md-12 col-lg-4"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant07.jpg"></figure>
+      </div>
+    </section>
+
+    <!-- 失った歯を補う治療の選択肢 -->
+    <section id="sec04" class="container pt-60">
+      <h2 class="ttl">失った歯を補う治療の選択肢</h2>
+      <div class="row">
+        <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant08.jpg"></figure>
+        <div class="col-md-12 col-lg-6">
+          <p>歯を失った場合、入れ歯・ブリッジ・インプラントの3つの対応方法があります。<span class="marker">インプラントは噛み心地が天然歯に近い</span>メリットを持つ治療方法です。<br>
+            インプラントはチタン製の人工歯根をあごの骨に直接埋め込むので、あごの力を直に伝えること・ズレないことなどから、固いものや弾力性があるものも食べることができます。<br>
+            ブリッジは周囲の歯を削る必要がありますし、入れ歯は他の歯に金具を掛けますが、インプラントは周囲の歯に負担を掛けません。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- インプラント治療をする前に -->
+    <section id="sec05" class="container pt-60">
+      <h2 class="ttl">インプラント治療をする前に<br>読んでもらいたい内容</h2>
+      <div class="mt-40">
+        <h3>歯を無くしたままにしておくと・・・</h3>
+        <p>歯が抜けた後、特に支障がないからといってそのまま放置すると、残された歯に加わる負担が大きくなり、それらの歯の寿命が短くなります。それだけでなく、抜けた部分に隣の歯が倒れてきたり、噛み合わせの相手を失くした歯が伸びてきたりして、歯並びがくずれ、噛み合わせが狂ってしまいます。<br>
+          噛み合わせが狂うと、左右の顎の関節がバランスを失い、顎関節症という病気を起こしてしまいます。この病気になると、お口を開け閉めする度にポキポキ音が鳴ったり、口が開かなくなったり、頭痛や耳鳴りを起こしたりします。<br>
+          ですから、<span class="red">歯が抜けた時は治療を行って、バランスの良い歯並びに治す事</span>が必要です。</p>
+        <div class="mt-40 u-yellow">
+          <h4 class="u-ttl">歯を抜けたまま放置しておくと、こんなことになります！</h4>
+          <ul class="point">
+            <li>残った歯の寿命が短くなる！</li>
+            <li>隣の歯が倒れてくる！</li>
+            <li>対合していた歯が伸びてくる！</li>
+            <li>だんだんと噛み合わせが狂ってくる！</li>
+            <li>噛み合わせが狂うと頭痛や肩こり、ひどいと顎関節症になる危険がある！</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>歯をなくしたときの治療法</h3>
+        <p class="text-center">歯の抜けたところに行なう治療は3つあります。この中で、私たちはインプラントを推奨しています。<br>
+          「なぜインプラントがいいのか？」その理由を次からお話しますので、どうぞお読みください。</p>
+        <div class="row text-center">
+          <div class="col-md-12 col-lg-4 mt-20">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant09.jpg"></figure>
+            <h4 class="item-ttl">治療法1　部分入れ歯</h4>
+          </div>
+          <div class="col-md-12 col-lg-4 mt-20">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant10.jpg"></figure>
+            <h4 class="item-ttl">治療法2　ブリッジ</h4>
+          </div>
+          <div class="col-md-12 col-lg-4 mt-20">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant11.jpg"></figure>
+            <h4 class="item-ttl">治療法3　インプラント治療</h4>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>部分入れ歯のデメリット</h3>
+        <p>歯を失ったときに行う治療のうち、今まで最も多かった治療は、部分入れ歯でした。しかし、インプラント技術が向上してきた今、部分入れ歯を選択しない人が増えてきています。<br>
+          部分入れ歯のデメリットは、見た目が悪い・噛む力が弱まるなど何点かありますが、最も大きいデメリットは、残っている歯に大きな負担をかけ、寿命を縮めることでしょう。</p>
+        <div class="row mt-20">
+          <div class="col-md-12 col-lg-8">
+            <p>図のように、部分入れ歯は歯と歯肉が混在しており、力がかかると各々沈み込み（被圧変位）が違うため、その差がバネのかかる歯に悪影響を与える事があります。</p>
+          </div>
+          <figure class="col-md-12 col-lg-4 text-center"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant12.jpg"></figure>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>ブリッジのデメリット</h3>
+        <div class="row mt-20">
+          <div class="col-md-12 col-lg-8">
+            <p><span class="red">ブリッジの欠点は、なんといっても『両隣の健全な歯の寿命が縮まる』点です。</span><br>
+              ブリッジは装着時に、両隣の歯を削らなければなりません。削るとやはり歯の寿命は短くなります。そして、装着後にも両隣の歯に負担がかかります。<br>例えば1本歯を失った場合、前と後ろの歯を削り、3本分の噛み合わせの力を2本で支えるために、1本当りにかかる負担が大きくなります（単純計算でも1.5倍も圧力が必要）。欠損が2本であれば、当然さらに負担は大きくなります。<br>
+              また、両隣の歯と被さっているダミーの詰め物の間の清掃が非常に困難なため、この間からむし歯や歯周病になる可能性が高まります。</p>
+          </div>
+          <figure class="col-md-12 col-lg-4 text-center"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant13.jpg"></figure>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>部分入れ歯とブリッジのデメリットをまとめると・・・</h3>
+        <p>部分入れ歯にしてもブリッジにしても、両隣の歯に負担をかけることは、ご理解いただけたと思います。『負担をかける』と『両隣の歯もダメになる（＝抜歯する）』ことに繋がる可能性が高くなるわけです。</p>
+        <p>つまり、<span class="red">部分入れ歯やブリッジが、隣の歯をダメにし、さらに大きな部分入れ歯やブリッジにすると、さらにその隣の歯がダメになる。それを繰り返すと「総入れ歯」になってしまうわけです</span>。</p>
+        <p>これが、今までの歯科治療の限界でした。<br>
+          「誰でも年をとれば、入れ歯になるのは仕方ないね」と思う方が多いかもしれません。おじいちゃんやおばあちゃんを見ていると、そう思われるのも自然かもしれませんが、実はこの常識は世界（特に欧米）では非常識なのです。そう、その解決法が<span class="red">インプラント</span>です。</p>
+        <div class="mt-40">
+          <table class="table-gray table table-bordered">
+            <thead>
+              <tr>
+                <th>治療法</th>
+                <th>インプラント</th>
+                <th>入れ歯</th>
+                <th>ブリッジ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>審美性</th>
+                <td>◎</td>
+                <td>△</td>
+                <td>○</td>
+              </tr>
+              <tr>
+                <th>噛む力</th>
+                <td>◎</td>
+                <td>△</td>
+                <td>○</td>
+              </tr>
+              <tr>
+                <th>口内衛生</th>
+                <td>優れる（ブラッシングなどは必要）</td>
+                <td>不衛生になりやすい</td>
+                <td>不衛生になりやすい</td>
+              </tr>
+              <tr>
+                <th>耐久性</th>
+                <td>優れる（ブラッシングなどは必要）</td>
+                <td>合わなくなる事が多い</td>
+                <td>両隣の歯に負担がかかる<br>むし歯になる場合がある</td>
+              </tr>
+              <tr>
+                <th>健康な歯を削る</th>
+                <td>なし</td>
+                <td>なし</td>
+                <td>両隣の歯を削る</td>
+              </tr>
+              <tr>
+                <th>違和感</th>
+                <td>なし</td>
+                <td>有り</td>
+                <td>少ない</td>
+              </tr>
+              <tr>
+                <th>顎骨がやせる</th>
+                <td>なし</td>
+                <td>やせる</td>
+                <td>やせる事がある</td>
+              </tr>
+              <tr>
+                <th>手術</th>
+                <td>必要（抜歯程度を削除）</td>
+                <td>不要</td>
+                <td>不要</td>
+              </tr>
+              <tr>
+                <th>診療形態</th>
+                <td>自由診療</td>
+                <td>保険診療<br>（見映えの良いものは自由診療）</td>
+                <td>保険診療<br>（見映えの良いものは自由診療）</td>
+              </tr>
+              <tr>
+                <th>治療期間</th>
+                <td>6ヶ月～1年程度</td>
+                <td>2週間～2ヶ月</td>
+                <td>2～3週間</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- インプラントとは -->
+    <section id="sec06" class="container pt-60">
+      <h2 class="ttl">インプラントとは</h2>
+      <p>第3の治療の選択肢のインプラントとは、どのような治療なのか？<br>
+        図のように（右：天然歯／左：インプラント）、歯の根に代る人工的な根を骨の中に埋め込んだ上で、その上に歯を形成しようと考えたのがインプラントです。<br>実際は骨に穴をあけて、そこにチタンなどの人工歯根を埋め込み、それが骨とがっちりと結合した状態で、その上に人工の歯を取りつける治療方法です。</p>
+      <figure class="mt-20 text-center"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant14.jpg"></figure>
+      <div class="mt-40">
+        <h3>インプラント治療をおすすめするワケ</h3>
+        <p><span class="red">インプラントは、あごの骨にしっかり固定されているので、自分の歯のようにしっかりと噛むことができます</span>。つまり、今までのような美味しい食事が楽しめるわけです。<br>
+          また、両隣の歯も削らずに済みますし、負担する力も、従来と同じ程度の負担で済みますから、<span class="red">両隣の歯の寿命を縮めることもありません</span>。</p>
+        <p class="red">インプラントは直接あごの骨と固定されているため、両隣の歯に負担をかけることはなく、歯の寿命を縮めることはありません。</p>
+        <div class="row">
+          <div class="col-md-12 col-lg-8 u-yellow">
+            <p class="u-ttl">インプラントのメリット</p>
+            <ul class="point">
+              <li>天然歯と同じ食生活が送れる</li>
+              <li>残っている歯にやさしい治療</li>
+              <li>長期にわたって良い噛み合わせが維持できる  </li>
+            </ul>
+          </div>
+          <figure class="col-md-12 col-lg-4"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant15.jpg"></figure>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>インプラント治療のデメリット</h3>
+        <p>インプラントにもデメリットがないわけではありません。<br>
+          医学的なデメリットはありませんが、外科手術を伴うため、患者様には心理的に次のような不安があるようです。</p>
+        <div class="mt-40">
+          <h4 class="u-ttl">手術時の痛みの不安</h4>
+          <p>手術といえば痛いイメージが付き物ですが、麻酔下で行います。手術時間は、予定する本数にもよりますが30分～60分ぐらいで、少し難しい抜歯と同じぐらいですので、ご安心ください！</p>
+        </div>
+        <div class="mt-40">
+          <h4 class="u-ttl">耐久年数の不安</h4>
+          <p>インプラント手術をしても、3年と持たずに外れてしまうという話を聞くこともあります。それは、術前の診断をしっかり行っていないこと・術後のメインテナンスを怠っていたこと・歯科医師の技術不足のいずれか（もしくは複数）の理由が考えられます。<br>
+            当院では、そのようなことがないように「技術の向上」「メインテナンスの徹底」「10年間の長期保証制度」を設けています。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- インプラント治療の流れ -->
+    <section id="sec07" class="container pt-60">
+      <h2 class="ttl">インプラント治療の流れ</h2>
+      <div class="mt-40">
+        <h3>STEP1　診断と治療計画</h3>
+        <p>レントゲン（CT）などによる診断・インプラント治療に関する説明を行います。</p>
+      </div>
+      <div class="mt-40">
+        <h3>STEP2　インプラント治療前の処置</h3>
+        <p>歯周病治療やむし歯治療などの治療。骨造成なども行う場合もあります。</p>
+      </div>
+      <div class="mt-40">
+        <h3>STEP3　インプラントの埋入手術</h3>
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <p>インプラントを局所麻酔で骨の中に埋め込みます。処置の時間はだいたい約2時間前後。<br>
+              局所麻酔のため、痛みはほとんどありません。</p>
+          </div>
+          <figure class="col-md-12 col-lg-6 text-center"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant16.jpg"></figure>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>STEP4　インプラントと骨の結合安定期間</h3>
+        <p>インプラントと骨がしっかりと結合するまで約12～24週間待ちます。</p>
+      </div>
+      <div class="mt-40">
+        <h3>STEP5　安定期間後の二次処置</h3>
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <p>埋まっているインプラントの頭を出し、土台を取り付けます。</p>
+          </div>
+          <figure class="col-md-12 col-lg-6 text-center"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant17.jpg"></figure>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>STEP6　人工歯の型取り・装着</h3>
+        <p>ここで人工の歯を取り付けます。</p>
+      </div>
+      <div class="mt-40">
+        <h3>STEP7　治療後の定期チェック</h3>
+        <p>治療が終った後は、定期的なメンテナンスを受けていただきます。</p>
+      </div>
+    </section>
+
+    <!-- インプラント難症例に対する治療法 -->
+    <section id="sec08" class="container pt-60">
+      <h2 class="ttl">インプラント難症例に対する<br>治療法</h2>
+      <p>これまで、インプラントの適応外と考えられていたケースでも、技術の進歩により適応が可能となってきました。これより、インプラントの進んだ技術について、少しずつ紹介していきたいと思います。</p>
+      <div class="mt-40">
+        <h3>サージカルガイド</h3>
+        <p>サージカルガイドは、インプラントの手術の際にあごの骨にドリリングする工程で、深さや位置を細かくガイドしてくれるツールです。<br>
+          サージカルガイドを使うことで、歯科医師が事前にコンピューター上で綿密なシミュレーションを行って決めた人工歯根の埋入位置を、実際の治療で再現することが可能となります。</p>
+        <div class="row mt-20">
+          <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant18.jpg"></figure>
+          <figure class="col-md-12 col-lg-6"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant19.jpg"></figure>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>サイナスリフト</h3>
+        <p>上顎の骨の上には上顎洞という大きな空洞があります。歯を失ってインプラントを埋めたい場合、上顎洞が大きく拡大していると、骨の厚さが不足し、インプラントの手術に必要な骨の厚みが得られないケースがあります。<br>
+          このようなケースでは、上顎洞の膜全体を押し上げ、骨補てん材を用いて骨を作り、インプラントを埋入します。これが『サイナスリフト（上顎洞底挙上術）』です。<br>
+          サイナスリフトを行った後、通常4～6ヶ月待って、骨が安定してからインプラント埋入を行います。</p>
+        <div class="u-implant mt-40 row">
+          <div class="col-md-12 col-lg-4 text-center">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant20.jpg"></figure>
+            <p>治療前のレントゲン写真。<br>黄色い線が上顎洞部分です。</p>
+          </div>
+          <div class="col-md-12 col-lg-4 text-center">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant21.jpg"></figure>
+            <p>黄色と赤の線で囲まれた所に、サイナスリフトによって骨補てん材が注入されています。</p>
+          </div>
+          <div class="col-md-12 col-lg-4 text-center">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant22.jpg"></figure>
+            <p>サイナスリフト実施7ヶ月後、インプラント埋入を行いました。</p>
+          </div>
+        </div>
+        <p class="mt-20">※インプラントの進んだ処置は、どの歯科医師でも行えるというわけではありません。トレーニングを積んで、十分な知識と経験が必要となります。</p>
+      </div>
+      <div class="mt-40">
+        <h3>GBR法</h3>
+        <p>『GBR法（骨再生誘導法）』とは、歯槽骨の骨幅が不足して、インプラントが露出する時に用いる治療法です。骨補填材をメンブレンという人工膜で覆い、骨の再生を促します。<br>
+          約4～6ヶ月で歯槽骨が再生され、インプラントが安定します。</p>
+        <div class="u-implant mt-40 row">
+          <div class="col-md-12 col-lg-4 text-center">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant23.jpg"></figure>
+            <p>骨の幅や高さが足りない所に、自家骨または骨補填材を填入します。</p>
+          </div>
+          <div class="col-md-12 col-lg-4 text-center">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant24.jpg"></figure>
+            <p>人工膜（メンブレンやチタンメッシュ）を乗せ、骨が造成するスペースを作ります。</p>
+          </div>
+          <div class="col-md-12 col-lg-4 text-center">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant25.jpg"></figure>
+            <p>骨が造成してから人工膜を除去し、インプラント体が安定するのを待ちます。</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>スプリットクレスト</h3>
+        <p>『スプリットクレスト』とは、インプラントを埋め込む時、骨の高さは十分あっても、骨の厚み（幅）が不足している時に用いる治療法です。<br>
+          粘膜をはく離した骨の頂上部に、骨ノミを用いて少しずつ骨を広げ、インプラントを埋め込むための隙間を作ります。<br>
+          インプラントを埋め込み、骨造成材を用います。骨が造成して、インプラントが固定されれば成功です。</p>
+        <div class="u-implant mt-40 row">
+          <div class="col-md-12 col-lg-4 text-center">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant26.jpg"></figure>
+            <p>骨の高さはあっても、幅が足りません。</p>
+          </div>
+          <div class="col-md-12 col-lg-4 text-center">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant27.jpg"></figure>
+            <p>骨ノミを用いて骨を2分割します。</p>
+          </div>
+          <div class="col-md-12 col-lg-4 text-center">
+            <figure class="item-img"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant28.jpg"></figure>
+            <p>インプラントを設置、インプラント体が安定するのを待ちます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 料金表 -->
+    <section id="sec09" class="container pt-60">
+      <h2 class="ttl">料金表</h2>
+      <div>
+        <table class="table-green table table-bordered">
+          <colgroup>
+            <col width="30%">
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>CT</th>
+              <td>16,500円（撮影回数にかかわらず）</td>
+            </tr>
+            <tr>
+              <th>手術代</th>
+              <td>1回につき 132,000円</td>
+            </tr>
+            <tr>
+              <th>インプラント</th>
+              <td>1本　275,000円（保証・メンテナンス料・上部構造を含む）</td>
+            </tr>
+            <tr>
+              <th>サイナスリフト</th>
+              <td>1回につき　165,000円</td>
+            </tr>
+            <tr>
+              <th>GBR</th>
+              <td>1回につき　165,000円</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-40">
+        <p>当院では、インプラントシステム（リプレイス：ノーベルバイオケア㈱／POIEX：京セラ株式会社）を採用しております。<br>
+          手術代は、インプラント埋入本数にかかわらず、1度の手術にかかわる料金です。</p>
+        <p class="mt-40">上顎3本（ダミー2歯のブリッジ形態）と下顎2本（ダミー1歯のブリッジ形態）埋入して、上顎サイナスリフトを行う場合は、以下のとおりです。</p>
+        <div>
+          <table class="table-green table table-bordered">
+            <colgroup>
+              <col width="30%">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>CT</th>
+                <td>16,500円（撮影回数にかかわらず）</td>
+              </tr>
+              <tr>
+                <th>上顎</th>
+                <td>インプラント275,000円×3＋ダミー55,000円×2＋サイナスリフト165,000円＋手術代132,000円（税込）</td>
+              </tr>
+              <tr>
+                <th>下顎</th>
+                <td>インプラント275,000円×2＋ダミー55,000円＋手術代132,000円（税込）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><span class="red">合計：1,969,000円（税込）　※上顎・下顎それぞれ1回ずつ（計2回）の手術となります。</span></p>
+      </div>
+    </section>
+
+    <!-- インプラント治療Q&A -->
+    <section id="sec10" class="container pt-60">
+      <h2 class="ttl">インプラント治療Q&amp;A</h2>
+      <div class="u-faq">
+        <dt class="que">インプラントの手術は痛くないですか？</dt>
+        <dd class="mb-4">
+          <p>個人差はありますが、局所麻酔をして行いますので、手術中の痛みはほとんど感じません。（歯を抜くときの痛み程度と考えてください）</p>
+        </dd>
+        <dt class="que">治療期間はどれくらいですか？</dt>
+        <dd class="mb-4">
+          <p>通常、4～7ヶ月くらいかかります。一般的に、インプラントが顎の骨と結合するのに、下顎で3ヶ月・上顎で5ヶ月必要と言われています。その後、一定期間安静にした後、上部に歯の部分を作成し、合計すると下顎で4ヶ月・上顎で6ヶ月くらいかかります。<br>
+            また、骨量が少ない場合は、骨造成で、さらに3～6ヶ月必要となります。</p>
+        </dd>
+        <dt class="que">インプラント手術は誰でも受けられますか？</dt>
+        <dd class="mb-4">
+          <p>顎の骨が完成する18歳以上から、健康であれば高齢の方でも大丈夫です。<br>
+            ただし、お口の清掃が十分にできない方・重度の全身疾患（重度の糖尿病・心疾患・骨粗鬆症・腎疾患・肝疾患・呼吸器系疾患・高血圧など）のある方・喫煙者・妊娠中の方などは、できない場合があります。</p>
+        </dd>
+        <dt class="que">インプラントはどれくらい持ちますか？</dt>
+        <dd class="mb-4">
+          <p>インプラントは10年間で90数％持つと言われております。長持ちするか否かは、二つのことに大きく左右されます。<br>
+            一つは噛み合わせです。いくらインプラントが丈夫でも、残っている歯が抜けたり動揺すれば、インプラントに過大な負担が生じ寿命が短くなります。<br>
+            もう一つは汚れです。天然歯の歯槽膿漏と同じで、インプラントも細菌感染により寿命が短くなります。長持ちさせるには、歯科医師・歯科衛生士の指示を守り、日頃のセルフケアと処置後のメインテナンスが大変重要です。</p>
+        </dd>
+      </div>
+    </section>
+
+    <!-- 歯科用コーンビームCTの特徴 -->
+    <section id="sec11" class="container pt-60">
+      <h2 class="ttl">歯科用コーンビームCTの特徴</h2>
+      <div class="mt-40">
+        <h3>歯・歯周組織や病変の3次元的描出</h3>
+        <div class="row">
+          <div class="row col-md-12 col-lg-4">
+            <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant29.jpg"></figure>
+            <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant30.jpg"></figure>
+            <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant31.jpg"></figure>
+            <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant32.jpg"></figure>
+          </div>
+          <div class="col-md-12 col-lg-8">
+            <p>通常、歯科で用いるレントゲンは、1方向から投影した画像で診断するため、歯や歯周組織・病変などの立体的な把握が困難です。<br>
+              しかし、CTを用いることで、従来のエックス線画像のみでは原因が特定できなかった病変を描出し、診断することが可能となりました。</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>インプラントへの応用</h3>
+        <div class="row">
+          <div class="row col-md-12 col-lg-4">
+            <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant33.jpg"></figure>
+            <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant34.jpg"></figure>
+            <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant35.jpg"></figure>
+            <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant36.jpg"></figure>
+            <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant37.jpg"></figure>
+            <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/implant/implant38.jpg"></figure>
+          </div>
+          <div class="col-md-12 col-lg-8">
+            <p>インプラント治療において、CTによる術前診断は不可欠のものとなっています。<br>
+              CT画像上で、インプラントを埋入する部位の骨の幅・厚み・形態・骨質、さらには上顎洞や血管・神経との距離、上部構造の方向との関連性などを総合的に把握することにより、安全で確実な治療が可能となります。<br>
+              逆に言うならば、CTによる術前診断なしのインプラント治療は危険と言わざるを得ません。さらには、術後の埋入状態や経過観察時のCT撮影が行われるならば、それに越したことはありません。<br>
+              当院では、インプラント治療時には、歯科用コーンビームCT「KR―XSCAN」㈱）近畿レントゲン工業社を用いて、術前、術後および経過観察時のCT撮影を行っています。</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>低被ばく線量</h3>
+        <p>一般医科で用いられるCT装置と異なり、歯科用コーンビームCTは、正しく使用することにより、患者様への被ばく線量を低減することができます。<br>
+          正しく使用するとは、余分な領域を避けて撮像範囲を絞り、診断に必要な解像度の得られる最小限の被ばく線量を守ることであり、これにより、一般に歯科の診療で撮影するパノラマエックス線撮影の被ばく線量を、大きく超えない低線量で撮影することができます。これは、一般医科のCT撮影と比較するとかなり小さなものとなります。<br>
+          ただし、撮影者がこの条件を守らず撮影すると、歯科用コーンビームCTといえど、過度に患者様を被曝させることとなります。当院の院長は、日本歯科放射線学会専門医・指導医の自覚のもと、被ばく線量の低減に努めていきます。</p>
+      </div>
+    </section>
+  
+    <!-- 医療費控除について -->
+    <section id="sec12" class="container pt-60">
+      <h2 class="ttl">医療費控除について</h2>
+      <div class="mt-40">
+        <p>医療費控除とは、自分自身や家族のために支払った年間の医療費が、一定の金額を超えた場合に所得控除を受けることができる制度です。<br>
+        生計を同一にする配偶者やご家族の分をまとめて申請することができます。<br>
+        医療費控除の対象となる金額は、次の式で計算した金額（最高200万円）です。</p>
+        <div class="mt-40 u-yellow">
+          <h4 class="u-ttl">医療費控除の計算式</h4>
+          <p><span class="red">医療費控除＝（支払った医療費の額－保険金等で補てんされた額）－10万円（最高200万円）<br>
+          <span class="red">※所得金額の合計が200万円未満の人はその5％の金額</span></span></p>
+        </div>
+        <p><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1120.htm" target="_blank" rel="noopener noreferrer">詳しくは国税庁のホームページへ</a></p>
+        <p>医療費控除を受けるには、確定申告をしなければなりません。<br>
+        確定申告には、医療費などの領収書が必要になりますので、医療費控除を受けようと考えている場合は必ず領収書をもらって保管するようにしてください。
+        </p>
+        <div class="row mt-40">
+          <div class="col-md-12 col-lg-6 u-yellow">
+            <h5 class="u-ttl">歯の治療で医療費控除の対象となる主なもの</h5>
+            <ul class="point">
+              <li>セラミックやジルコニアなどの補綴物</li>
+              <li>金属床義歯（メタルプレートデンチャー）の治療</li>
+              <li>インプラント治療</li>
+              <li>矯正の必要が認められた場合の矯正歯科治療<br>（診断書が必要です）</li>
+              <li>発育段階にあるお子様の歯列矯正</li>
+              <li>治療のための交通機関の通院費</li>
+              <li>お子さんの通院に付添いが必要な場合の交通機関の交通費</li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-6 u-yellow">
+            <h5 class="u-ttl">歯の治療で医療費控除の対象とならないもの</h5>
+            <ul class="point">
+              <li>美容や審美を目的とした治療<br>(審美矯正・ホワイトニングなど)</li>
+              <li>自家用車で通院したときのガソリン代や駐車場代</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

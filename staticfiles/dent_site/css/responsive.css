@@ -1,0 +1,176 @@
+/* xl */
+@media screen and (max-width:1200px) {
+  .h-container {
+    padding: 100px 0 15px 0;
+  }
+  .g-navi nav {
+    width: 100%;
+  }
+  .column,
+  .blog {
+    margin: 0 auto;
+    width: 350px;
+    height: 150px;
+    line-height: 150px;
+  }
+}
+/* lg */
+@media screen and (max-width:992px) {
+}
+/* md */
+@media screen and (max-width:768px) {
+  body {
+    font-size: 15px;
+  }
+  header {
+    height: 60px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  .pc-only {
+    display: none;
+  }
+  .sp-only {
+    display: block;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .pagetitle {
+    height: 150px;
+  }
+
+  /* header */
+  .h-container {
+    padding: 0;
+  }
+  .responsive-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .h-logo {
+    max-width: 100%;
+    height: 60px;
+  }
+  .tel {
+    font-size: 25px;
+  }
+  .tel::after {
+    content: none;
+  }
+  .h-banner {
+    margin: 0 auto;
+    width: 210px;
+    height: 72px;
+    font-size: 15px;
+  }
+  .week {
+    background-color: antiquewhite;
+  }
+
+  /* home */
+  .slide {
+    height: 500px;
+  }
+  .slide h1 {
+    font-size: 30px;
+  }
+  .news-container {
+    padding-top: 0;
+  }
+  .news-back {
+    width: 100%;
+  }
+  .treatment .item {
+    width: 45%;
+  }
+  .treatment .item img {
+    width: 100%;
+    height: 175px;
+  }
+  .reserve_box {
+    padding: 40px 20px 20px;
+  }
+  .business-calendar-box > div {
+    width: 100%;
+  }
+  .cal02 {
+    margin-top: 30px;
+  }
+  .column {
+    margin-bottom: 30px;
+  }
+  /* sub */
+  .ttl {
+    width: 100%;
+  }
+  .u-ttl {
+    font-size: 18px;
+  }
+  .flex-half .item,
+  .flex-mini-img .l-desc,
+  .flex-mini-img .l-img {
+    width: 100%;
+  }
+  /* concept */
+
+  /* staff */
+  .sp-dr-img {
+    margin-bottom: 15px;
+  }
+  .sp-dr-img img {
+    height: 500px;
+  }
+  .u-staff .item {
+    width: 100%;
+  }
+  
+  /* general */
+  .u-general01 img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  .u-general02 .item {
+    text-align: center;
+    width: 100%;
+  }
+  .u-general02 .item-img img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* pediatric */
+
+  /* treatment */
+
+  /* cosmetic */
+
+  /* orthodontics */
+  .u-orthodontics .item {
+    width: 100%;
+  }
+
+  /* implant */
+  .u-implant .item {
+    width: 100%;
+  }
+
+  /* recruit */
+
+  /* access */
+  .u-access .item {
+    width: 100%;
+  }
+}
+/* sm */
+@media screen and (max-width:576px) {
+  header {
+    height: 40px;
+  }
+}

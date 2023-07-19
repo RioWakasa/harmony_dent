@@ -1,0 +1,39 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/sub.css' %}">
+{% endblock head %}
+
+{% block content %}
+<div class="pagetitle">
+  <h1>
+    <span class="jp">ニュース</span>
+    <span class="en">News</span>
+  </h1>
+</div>
+
+<main>
+  <!-- パンくずリスト -->
+  <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">News</li>
+    </ol>
+  </nav>
+
+  <section class="container">
+    <h2 class="ttl">ニュース</h2>
+    {% for item in object_list %}
+      <div class="contents">
+        <div class="py-2">
+          <h3>{{ item.title }}</h3>
+          <time style="font-size: 13px;">{{ item.date }}</time>
+          <a class="d-btn btn btn-success" style="float: right;" href="{% url 'dent_site:news_detail' item.pk %}" role="button">詳しくはこちら</a>
+        </div>
+      </div>
+    {% endfor %}
+    {% include 'dent_site/components/pagination.html' %}
+  </section>
+</main>
+{% endblock %}

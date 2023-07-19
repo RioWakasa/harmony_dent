@@ -1,0 +1,204 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/home.css' %}">
+{% endblock head %}
+
+{% block content %}
+<!-- スライドショー -->
+<div class="slide position-relative">
+  <h1 class="position-absolute text-center">「ここにきてよかった」「また来たい」<br>そう思える医院づくりを心がけております。</h1>
+  <img class="h-100 w-100" src="media/photo/home/slide1.jpg"/>
+  <img class="h-100 w-100 position-absolute" src="media/photo/home/slide2.jpg" style="left: 0;"/>
+  <img class="h-100 w-100 position-absolute" src="media/photo/home/slide3.jpg"  style="left: 0;"/>
+</div>
+
+<!-- メイン -->
+<main>
+  <!-- ニュース -->
+  <div class="news-container back-green py-80 position-relative" style="height: 500px;">
+    <div class="news-back mx-auto" style="background-image: url(/media/img/home/news.jpg);">
+      <div class="news">
+        <h2 class="en green py-3">NEWS</h2>
+        {% for content in contents %}
+          <div>
+            <div class="row py-2">
+              <time class="col-2 offset-1">{{ content.date }}</time>
+              <a href="{% url 'dent_site:news_detail' content.pk %}" class="txt fw-bold col-8">{{ content.title }}</a>
+            </div>
+          </div>
+        {% endfor %}
+        <div class="text-center">
+          <a href="{% url 'dent_site:news' %}" class="btn btn-outline-success mt-4">記事一覧</a>
+        </div>
+      </div>
+    </div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="py-80">
+    <div class="d-flex justify-content-center">
+      <img class="hedgehog col-6" src="media/img/home/first.png">
+      <div class="bubble position-relative">
+        <p class="txt">初めて診察を受ける方はこちらをご覧ください</p>
+        <a href="{% url 'dent_site:first' %}" class="en"><div class="click-btn">click</div></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-yellow py-80 text-center">
+    <div class="container">
+      <h2 class="mb-3">
+        <span class="jp">岡山市で地域の皆さまの<br class="sp-only">
+          <span class="green">健康を守る歯科医院</span></span>
+        <span class="en">Concept</span>
+      </h2>
+      <p class="mx-auto" style="width: 70%;">
+        病気を起こすことのない健康なお口を維持していくことにより、<span class="marker">生涯に渡り幸せな生活</span>を送っていただくことで、地域の皆様に<span class="marker">笑顔とQ.O.L（生活の質）の向上</span>を提供いたします。<br>
+        予防・メンテナンスに力を入れており、患者様と同じ目線で、なるべく歯を削らない・抜かない・痛みの少ない治療を目指しております。
+      </p>
+      <a class="d-btn btn btn-success mt-5" href="{% url 'dent_site:concept' %}" role="button">詳しくはこちら</a>
+    </div>
+  </div>
+
+  <div class="treatment_back py-80" style="background-image: url(/media/img/home/back.jpg);">
+    <div class="treatment container">
+      <h2 class="mb-5">こんな<span class="green">お悩み</span>はありませんか？</h2>
+      <div class="row text-center">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="item mb-3">
+            <a href="{% url 'dent_site:general' %}" class="item-thumb">
+              <figure><img class="img-fluid" src="media/img/home/general.png"></figure>
+              <div class="jp">歯が痛い・歯茎が痛い</div>
+            </a>
+            <h3>一般歯科</h3>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="item mb-3">
+            <a href="{% url 'dent_site:pediatric' %}" class="item-thumb">
+              <figure><img class="img-fluid" src="media/img/home/pediatric.png"></figure>
+              <div class="jp">子供の歯並びが気になる</div>
+            </a>
+            <h3>小児歯科</h3>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="item mb-3">
+            <a href="{% url 'dent_site:treatment' %}" class="item-thumb">
+              <figure><img class="img-fluid" src="media/img/home/treatment.png"></figure>
+              <div class="jp">綺麗な歯を維持したい</div>
+            </a>
+            <h3>予防治療</h3>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="item mb-3">
+            <a href="{% url 'dent_site:cosmetic' %}" class="item-thumb">
+              <figure><img class="img-fluid" src="media/img/home/cosmetic.png" style="padding: 10px;"></figure>
+              <div class="jp">歯を白くしたい</div>
+            </a>
+            <h3>審美治療・<br>ホワイトニング</h3>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="item mb-3">
+            <a href="{% url 'dent_site:orthodontics' %}" class="item-thumb">
+              <figure><img class="img-fluid" src="media/img/home/orthodontics.png" style="padding: 20px 0;"></figure>
+              <div class="jp">矯正器具が目立つのが嫌だ</div>
+            </a>
+            <h3>矯正歯科</h3>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="item mb-3">
+            <a href="{% url 'dent_site:implant' %}" class="item-thumb">
+              <figure><img class="img-fluid" src="media/img/home/implant.png" style="padding: 0 25px;"></figure>
+              <div class="jp">しっかり噛めるようになりたい</div>
+            </a>
+            <h3>入れ歯・<br>インプラント治療</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-80">
+    <div class="container circle">
+      <h2 class="mb-5">当院の<span class="red">設備紹介</span></h2>
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <div class="row">
+            <figure class="col-6"><img class="img-fluid mb-3" src="media/photo/home/facility01.jpg"></figure>
+            <figure class="col-6"><img class="img-fluid mb-3" src="media/photo/home/facility02.jpg"></figure>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="f-ttl green">どなたも安心して通える<br>快適な医院づくりを目指して</h3>
+          <p>当院にご来院いただく全ての患者様に、安心して治療を受けていただけるように、診療で使う機器の滅菌対策を徹底して、感染症予防に努めております。<br>
+          また、お子様からご高齢の方まで、ご来院いただく全ての患者様が、快適に通院できるような医院づくりを心がけております。
+          </p>
+          <a class="d-btn btn btn-success mt-5 mx-auto" href="{% url 'dent_site:access' %}" role="button">詳しくはこちら</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-yellow py-80">
+    <div class="container">
+      <h2 class="mb-5 red">院長・スタッフ紹介</h2>
+      <div class="row flex-row-reverse">
+        <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" src="media/photo/staff/staff1.jpg" alt="スタッフ写真"></figure>
+        <div class="col-md-12 col-lg-6">
+          <p>当院は、日々技術を磨いて研鑽を重ね、学会などにも積極的に参加し、患者様に喜んでもらおうとみんなで協力している歯科医院です。<br>
+          スタッフは皆前向きで明るく、やる気に満ち溢れています。</p>
+          <a class="d-btn btn btn-success mt-5 mx-auto" href="{% url 'dent_site:staff' %}" role="button">詳しくはこちら</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-green py-80">
+    <div class="container">
+      <h2 class="mb-5"><span class="red">予約制</span>についてのご案内</h2>
+      <p class="mx-auto text-center" style="width: 65%;">
+        当院は、予約制となっております。<br>
+        歯科医療では、お約束のお時間に合わせて、その患者様一人ひとりに合わせた専用の器具を滅菌・消毒の上、準備してお待ちする必要がございます。<br>
+        そのため、極力「急なご予約の変更」「ご連絡なしのキャンセル」はご遠慮いただければ幸いです。
+      </p>
+      <div class="reserve_box">
+        <div class="business-calendar-box d-md-flex justify-content-lg-between">
+          <div class="cal01">
+            <!--今月のカレンダー-->
+            <script type="text/javascript">
+              setCalender();
+            </script>
+            </div>
+          <div class="cal02">
+            <!--翌月のカレンダー-->
+            <script type="text/javascript">
+              setCalender2();
+            </script>
+          </div>
+        </div>
+        <p class="caption">
+          <span class="attr01">休診</span>
+          <span class="attr02">午前休診</span>
+          <span class="attr03">午後休診</span>
+        </p>
+      </div>
+    </div>
+  </div>
+      
+  <!-- コラム&ブログ -->
+  <div class="pagelink container py-80 d-md-flex justify-content-evenly">
+    <a href="{% url 'dent_site:column' %}">
+      <div class="column position-relative" style="background: url(/media/photo/home/background1.jpg); background-size: cover;"><p class="position-absolute text-center w-100">コラム</p></div>
+    </a>
+    <a href="https://ameblo.jp/harmonydent/" target="_blank" rel="noopener noreferrer">
+      <div class="blog position-relative" style="background: url(/media/photo/home/background2.jpg); background-size: cover;"><p class="position-absolute text-center w-100">院長・スタッフのブログ</p></div>
+    </a>
+  </div>
+</main>
+{% endblock %}

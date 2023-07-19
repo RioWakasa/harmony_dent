@@ -1,0 +1,141 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/sub.css' %}">
+{% endblock head %}
+
+{% block content %}
+  <!-- タイトル -->
+  <div class="pagetitle">
+    <h1>
+      <span class="jp">小児歯科</span>
+      <span class="en">pediatric</span>
+    </h1>
+  </div>
+
+  <main class="circle">
+    <!-- パンくずリスト -->
+    <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Pediatric</li>
+      </ol>
+    </nav>
+
+    <section id="menu" class="container">
+      <ul class="flex-wrap">
+        <li><a href="#sec01">小児歯科</a></li>
+        <li><a href="#sec02">小児矯正</a></li>
+      </ul>
+    </section>
+
+    <!-- 小児歯科について -->
+    <section id="sec01" class="container pt-60">
+      <h2 class="ttl">小児歯科について</h2>
+      <div class="row">
+        <figure class="col-md-12 col-lg-6"><img class="img-fluid" decoding="async" src="../media/photo/pediatric/pediatric01.jpg"></figure>
+        <div class="col-md-12 col-lg-6">
+          <p>こどもの歯と大人の歯を比べてみると、永久歯が生えてきても、こどもの歯は成長途中なため、大人の歯に比べるとエナメル質や象牙質に十分な厚みがありません。そのため、むし歯にかかりやすい状態にあります。<br>
+          さらに、乳歯の時期はむし歯の進行が早く初期には痛みが少ないので、むし歯の存在に気づいた時には、かなり進行していることもあります。<br>
+            そのため、お子様のお口の中は油断することなく、保護者の方が磨いてあげたり、仕上げ磨きをしてあげたりすることを推奨しています。</p>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>こどものころからのむし歯予防の重要性</h3>
+        <p>お口の健康を守る意識は、幼少期から育てる必要があります。<span class="marker">『毎日お口のケアを行うこと』</span>と<span class="marker">『定期的に歯科医院に行くこと』</span>がこどものころから習慣付けば、天然歯を長く健康に維持できるでしょう。<br>
+          『乳歯は生え変わるからむし歯になっても構わない』と考える人もいますが、むし歯などで早く歯を失うと歯並びが悪くなる可能性がありますし、口腔内環境が悪くなっていると、新たに生えてくる歯もむし歯にかかるリスクが高くなります。</p>
+      </div>
+      <div class="mt-40">
+        <h3>お子様の予防法</h3>
+        <div class="row">
+          <div class="col-md-12 col-lg-6 mb-40">
+            <figure><img class="img-fluid" decoding="async" src="../media/photo/pediatric/pediatric02.jpg"></figure>
+            <h4 class="u-ttl mt-20">食後はお口を綺麗にしましょう</h4>
+            <p>食事のあと、歯磨きをする習慣を付けることは、お口の健康を守るための基本事項です。<br>
+              小さいお子様は保護者の方が磨いてあげ、自分で磨けるようになっても、仕上げ磨きや確認をしていきましょう。</p>
+          </div>
+          <div class="col-md-12 col-lg-6 mb-40">
+            <figure><img class="img-fluid" decoding="async" src="../media/photo/pediatric/pediatric03.jpg"></figure>
+            <h4 class="u-ttl mt-20">食事やおやつは規則正しく</h4>
+            <p>食事の時間やおやつのタイミングは、できるだけ規則正しくすることを心がけましょう。食事やおやつをダラダラと食べ続けていると、お口の中が酸性でいる時間が長く、むし歯ができやすい環境を助長してしまいます。</p>
+          </div>
+          <div class="col-md-12 col-lg-6 mb-40">
+            <figure><img class="img-fluid" decoding="async" src="../media/photo/pediatric/pediatric04.jpg"></figure>
+            <h4 class="u-ttl mt-20">食べるお菓子の種類に気を付ける</h4>
+            <p>むし歯の原因になる細菌は、食べ物のかすの糖分を栄養源として繁殖し、酸を出して歯を溶かします。むし歯菌は甘いものを好みますから、糖分が多いおやつは控えめにして、しっかり噛んであごを鍛える食品を選びましょう。</p>
+          </div>
+          <div class="col-md-12 col-lg-6 mb-40">
+            <figure><img class="img-fluid" decoding="async" src="../media/photo/pediatric/pediatric05.jpg"></figure>
+            <h4 class="u-ttl mt-20">1ヶ月～半年に一回の定期検診を</h4>
+            <p>むし歯予防は、家庭で行うセルフケアと歯科医院で行うプロケアの両輪がそろうことで実現できます。<br>
+            当院では<span class="marker">3～4ヶ月に1回</span>、定期的なメインテナンスを受けることを推奨しています。まずはお気軽に当院にお越しください。</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>むし歯にさせないための治療</h3>
+        <div class="mt-40">
+          <h4 class="u-ttl">むし歯に強い歯を作るフッ素塗布</h4>
+          <p>当院のメインテナンスに来ていただければ、お口の中のクリーニングや歯磨き指導に加えて、フッ素の塗布も行うことができます。<br>
+          フッ素はむし歯の細菌が出す酸への抵抗を高めますから、大切なお子様の歯を守る効果があります。</p>
+        </div>
+        <div class="mt-40">
+          <h4 class="u-ttl">歯を削ることなく予防できるシーラント</h4>
+          <p>6歳くらいで生えてくる奥歯を6歳臼歯と呼びます。6歳臼歯は表面の溝が深いため、むし歯になりやすい特徴があります。シーラントという歯科専用のプラスチックを溝に詰めることで、お子様の歯をむし歯から予防します。</p>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>本当に重要なのは将来の成長と発育です</h3>
+        <div class="row">
+          <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" class="circle" src="../media/photo/pediatric/pediatric06.jpg"></figure>
+          <div class="col-md-12 col-lg-6">
+            <p>保護者の方の多くは、外観上の問題からお子様の歯並びを気にされていると思います。確かに見た目の悪さはコンプレックスなどに繋がることもありますから、お子様本人にとっても非常に重要な要素です。<br>
+              しかし、歯科医院として注意を促したいのは、噛み合わせのバランスや、歯の本数の過不足、歯が重なることなどから来るお手入れのしにくさから、むし歯や歯周病のリスクが上がることです。<br>
+              当院では、見た目の良さを重視しながらも、噛み合わせのバランスなどにも着目し、お子様の健全な育成と健康にフォーカスした矯正治療を行っています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 小児矯正について -->
+    <section id="sec02" class="container pt-60">
+      <h2 class="ttl">小児矯正について</h2>
+      <div class="mt-40">
+        <h3>プレオルソ</h3>
+        <div class="row flex-row-reverse">
+          <figure class="col-md-12 col-lg-4 text-center mb-3"><img class="img-fluid" decoding="async" src="../media/photo/pediatric/preortho.jpg"><figcaption>プレオルソ</figcaption></figure>
+          <div class="col-md-12 col-lg-8">
+            <p>当院では<span class="green">マウスピース型矯正装置（プレオルソ）</span>を使って、混合歯列期（乳歯が永久歯に交換する時期）の歯並びを矯正する方法を取り入れております。<br>
+              使用時間は、<span class="marker">毎日、日中1~2時間と就寝時</span>です。以下の特徴があります。</p>
+            <ul class="point u-yellow">
+              <li>誰にも知られない（外で外せる）</li>
+              <li>痛みが少ない</li>
+              <li>歯がぐらぐらしない</li>
+              <li>お口を汚さない</li>
+              <li>むし歯を作らない</li>
+              <li>装着すればするほど綺麗になる</li>
+              <li>術後の長期安定性が高い  </li>
+            </ul>
+          </div>
+        </div>
+        <p>壊れた装置の取り換えも可能です。また、不正咬合の種類によって、最適なトレーナーが使用できます。<br>
+          口の周りの筋肉を整えることで正常な発育を促すものなので、成長段階にある6～10歳くらいのお子様に適していますが、当院では第2大臼歯萌出まで対応しております。適応年齢がありますのでお気軽にご相談ください。<br>
+          最初に無料相談を受けていただいた上で、開始するかどうかを検討していただきます。</p>
+      </div>
+    </section>
+
+    <!-- 料金表 -->
+    <section id="sec03" class="container pt-60">
+      <h2 class="ttl">料金表</h2>
+      <table class="table-green table table-bordered">
+        <tbody>
+          <tr>
+            <th>マウスピース型矯正装置（プレオルソ）</th>
+            <td>経過観察料込みで　154,000円（税込）</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+{% endblock %}

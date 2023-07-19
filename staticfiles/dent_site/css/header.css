@@ -1,0 +1,241 @@
+@charset "utf-8";
+.leaf {
+  z-index: 100;
+  pointer-events: none;
+}
+
+.h-container {
+  padding: 150px 0 15px 0;
+}
+/* バナー */
+.h-banner {
+  margin: 0 10px 0 10px;
+  width: 250px;
+  height: 85px;
+  display: inline-block;
+  color: green;
+  border: 5px solid green;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0.3em 0 black;
+}
+.h-banner p span {
+  color: white;
+  background-color: green;
+  border-radius: 15px;
+  padding: 0 20px;
+}
+.h-banner:hover {
+  transform: translateY(0.2em);
+  box-shadow: none;
+}
+/* 電話番号 */
+.h-tel .tel {
+  font-size: 30px;
+  font-weight: bold;
+  color: #F26649;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.h-tel .tel:before {
+  content: url(../../img/tel.png);
+  position: relative;
+  top: 5px;
+}
+.tel::after {
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+  content: '';
+  width: 88%;
+  height: 2px;
+  background: #3c2809;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+.tel:hover::after {
+  transform: scale(1, 1);
+}
+/* スケジュール */
+.h-tel .h-schedule p {
+  margin-top: -7px;
+}
+.week {
+  background-color:  #fff;
+  display: inline-block;
+  font-size: 10px;
+  text-align: center;
+  width: 50px;
+  margin-right: 5px;
+}
+.time {
+  font-size: 12px;
+}
+
+/* pc navi 画面上部固定 */
+.g-navi {
+  top: 0;
+  z-index: 99;
+}
+.g-navi nav {
+  width: 75%;
+}
+.gnavi__list {
+  width: 20%;
+  height: 95px;
+  position: relative;
+  transition: all .3s;
+  text-align: center;
+  padding-top: 8px;
+}
+.gnavi__list:hover {
+  background-color: #6eaa5e;
+}
+.gnavi__list:hover::before {
+  background-color: #6eaa5e;
+}
+.gnavi__list .jp {
+  display: block;
+  color: #E29956;
+  font-size: 15px;
+  font-weight: 600;
+}
+.gnavi__list:hover .jp {
+  color: #fff;
+}
+.gnavi__list:not(:first-child)::before {
+  content: "";
+  width: 1px;
+  height: 80%;
+  background-color: #6eaa5e;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  transition: all .3s;
+}
+/* droppdown list */
+.dropdown__lists {
+  display: none;/* デフォルトでは非表示の状態にしておく */
+  width: 100%;
+  position: absolute;
+  top: 95px;
+  left: 0;
+}
+.dropdown__list {
+  background-color: #469536;
+  height: 60px;
+  transition: all .3s;
+  position: relative;
+}
+.dropdown__list:hover {
+  background-color: #008000;
+}
+.gnavi__list:hover .dropdown__lists {
+  display: block;/* Gナビメニューにホバーしたら表示 */
+}
+.dropdown__list:not(:first-child)::before{
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #3492d1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.dropdown__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.line-center {
+  line-height: 60px;
+}
+
+/* sp-navi */
+/* 画面右上に固定 */
+.gMenu .menu-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 1.5em;
+  padding-top: 5px;
+  height: 12px;
+}
+/* メニューアイコン（三本線）の真ん中の線 */
+.gMenu .menu-icon .navicon {
+  display: block;
+  height: 2px;
+  width: 31px;
+  position: relative;
+  transition: background .4s ease-out; /* 形が変わる時のアニメーション */
+}
+/* メニューアイコン（三本線）の上と下の線を疑似要素で追加 */
+.gMenu .menu-icon .navicon::before,
+.gMenu .menu-icon .navicon::after {
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .4s ease-out; /* 形が変わる時のアニメーション */
+  width: 100%;
+}
+.gMenu .menu-icon .navicon::before {top: 10px;} /* 位置を上にずらす */
+.gMenu .menu-icon .navicon::after {top: -10px;} /* 位置を下にずらす */
+/* 表示されるメニュー */
+.gMenu .menu {
+  background-color: rgba(255,255,255,0.9);
+  overflow: hidden;
+  max-height: 0; /* ★最初は高さを0にして非表示状態に */
+  transition: max-height .6s; /* 表示されるときのアニメーション */
+  padding: 0 30px;
+}
+/* メニュー部分のデザイン */
+.gMenu .menu div:first-of-type {
+  padding-top: 25px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  padding-bottom: 50px;
+}
+.gMenu .menu a {
+  display: block;
+  padding: 7px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.gMenu .menu a:hover {
+  background-color: #f4f4f4;
+}
+/* チェックボックスは常に非表示 */
+.gMenu .menu-btn {
+  display: none;
+}
+/* 以下はチェックボックスがONの時の状態 */
+.gMenu .menu-btn:checked ~ .menu {
+  max-height: 100vh;
+  transition: max-height .6s;
+}
+/* メニューボタンの中央の線を非表示に */
+.gMenu .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
+/* メニューボタンの上下の線を45度傾けて✕印を作る */
+.gMenu .menu-btn:checked ~ .menu-icon .navicon::before {transform: rotate(-45deg);top: 0;}
+.gMenu .menu-btn:checked ~ .menu-icon .navicon::after {transform: rotate(45deg);top: 0;}
+/* サイトに合わせてオリジナルカスタマイズ */
+.gMenu .menu-icon .navicon,
+.gMenu .menu-icon .navicon::before,
+.gMenu .menu-icon .navicon::after {
+  background: #333333;
+}
+.gMenu .point li::before {
+  top: 1.2em;
+}
+.gMenu .point li {
+  font-size: 12px;
+  width: 50%;
+}

@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+/* スライドショー */
+.slide {
+  height: 650px;
+}
+.slide img {
+  opacity:0;
+  transition:all 1s ease-in-out;
+  object-fit:cover;
+}
+.slide h1 {
+  z-index: 90;
+  font-size: 40px;
+  font-weight: bold;
+  color: #4db56a;
+  text-shadow: 1px 1px 3px #fff, -1px 1px 3px #fff, 1px -1px 3px #fff, -1px -1px 3px #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 150px;
+  margin: auto;
+  width: 75%;
+}
+
+/* お知らせ */
+.news-back {
+  background-repeat: no-repeat;
+  width: 75%;
+  height: 100%;
+  background-size: cover;
+}
+.news-back .news {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  background-color: #ffffff6e;
+}
+/* .news .contents {
+  height: 60%;
+} */
+.news time {
+  width: 25%;
+}
+.news .contents .txt:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+}
+
+/* 波形 */
+.wave {
+  position: absolute;
+  height: 70px;
+  width: 98%;
+  background: #dbead5;
+  bottom: 0;
+}
+.wave::before,
+.wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+.wave::before {
+  width: 55%;
+  height: 109%;
+  background-color: #fff;
+  right: -1.5%;
+  top: 60%;
+}
+.wave::after {
+  width: 55%;
+  height: 100%;
+  background-color: #dbead5;
+  left: -1.5%;
+  top: 40%;
+}
+
+/* 初診の方 */
+/* ハリネズミジャンプ */
+.hedgehog{
+  height: 10%;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 128px;
+  animation-name: jump;
+  animation-duration: .4s;
+}
+@keyframes jump{
+  0%   { transform:translate(0%, 60px) rotateX(50deg); }
+  100% { transform:translate(0%, 0%); }
+}
+/* 吹き出し */
+.bubble {
+  margin: 0em 0 3em 40px;
+  padding: 15px;
+  background: #fff0c6;
+  border-radius: 30px;
+}
+.bubble:before {  
+  content: "";
+  position: absolute;
+  left: -38px;
+  width: 13px;
+  height: 12px;
+  bottom: 0;
+  background: #fff0c6;
+  border-radius: 50%;
+}
+.bubble:after {
+  content: "";
+  position: absolute;
+  left: -24px;
+  width: 20px;
+  height: 18px;
+  bottom: 3px;
+  background: #fff0c6;
+  border-radius: 50%;
+}
+
+/* ぷるぷるボタン */
+.click-btn {
+  width: 100px;
+  padding: .2em;
+  background: linear-gradient(#dbead5 , #6eaa5e);
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  margin: 18px auto 0 auto;
+}
+.click-btn:hover {
+  animation: bounce 2s ease-in-out;
+}
+@keyframes bounce {
+  5%  { transform: scale(1.1, .8); }
+  10% { transform: scale(.8, 1.1) translateY(-5px); }
+  15% { transform: scale(1, 1); }
+}
+
+/* 診療案内 */
+.treatment_back {
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
+}
+
+.treatment .item {
+  margin: 0 auto;
+}
+.treatment .item img {
+  width: 50%;
+  height: 200px;
+  border-radius: 50px;
+  background: linear-gradient(#fff7d0 , #fffbe7);
+  box-shadow: 10px 5px 5px #ebbf8391;
+}
+.treatment .item img:hover {
+	box-shadow: 0px 0px #e9e1d6;
+}
+.treatment .item .jp{
+  margin-top: 10px;
+}
+.treatment .item h3 {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #F26649;
+}
+
+/* 設備紹介 */
+.f-ttl {
+  font-size: 25px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/* カレンダー */
+.reserve_box {
+  background: #e9e1d6;
+  padding: 40px 50px 20px;
+  margin-top: 60px;
+}
+.business-calendar-box {
+  width: 100%;
+}
+.business-calendar-box > div {
+  background: #fff;
+  padding: 20px 30px 30px;
+  width: 48%;
+}
+.business-calendar {
+  background: #fff;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+  width: 100%;
+}
+.business-calendar th {
+  background: #4db56a;
+  border: 1px solid #d2d2d2;
+  font-size: 14px;
+  color: #fff;
+  padding: 6px 0;
+  text-align: center;
+}
+.business-calendar td {
+  border: 1px solid #d2d2d2;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 16px 4px;
+  vertical-align: top;
+}
+.reserve_box .caption {
+  font-size: 14px;
+  margin-top: 18px;
+}
+.reserve_box .caption span {
+  margin-right: 20px;
+}
+.reserve_box .caption .attr01::before {
+  content: "■";
+  color: #b8b8b8;
+}
+.reserve_box .caption .attr02::before {
+  content: "■";
+  color: #f59494;
+}
+.reserve_box .caption .attr03::before {
+  content: "■";
+  color: #94cff5;
+}
+.today {
+  background-color: #F26649;
+}
+.thu,
+.sun {
+  background-color: #b8b8b8;
+}
+
+/* ページリンク */
+.pagelink {
+  color: #fff;
+  font-size: 30px;
+}
+.column {
+  width: 500px;
+  height: 200px;
+  line-height: 200px;
+  transition-duration: 0.5s;
+}
+.blog {
+  width: 500px;
+  height: 200px;
+  line-height: 200px;
+  transition-duration: 0.5s;
+}
+.column::before,
+.blog::before {
+  content: '';
+  /* ↓暗いオーバーレイを半透明で配置 */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* ↓全体を覆うように配置 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.column:hover,
+.blog:hover {
+  transform: scale(0.8);
+  transition-duration: 0.5s;
+}
+.column p,
+.blog p {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}

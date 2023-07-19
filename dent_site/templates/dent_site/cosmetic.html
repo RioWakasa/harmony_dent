@@ -1,0 +1,305 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/sub.css' %}">
+{% endblock head %}
+
+{% block content %}
+  <!-- タイトル -->
+  <div class="pagetitle">
+    <h1>
+      <span class="jp">審美治療・ホワイトニング</span>
+      <span class="en">cosmetic</span>
+    </h1>
+  </div>
+
+  <main class="cosmeticPage">
+    <!-- パンくずリスト -->
+    <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Cosmetic</li>
+      </ol>
+    </nav>
+
+    <!-- メニュー -->
+    <section id="menu" class="container">
+      <ul class="flex-wrap">
+        <li><a href="#sec01">審美治療</a></li>
+        <li><a href="#sec02">ホワイトニング</a></li>
+        <li><a href="#sec04">医療費控除について</a></li>
+      </ul>
+    </section>
+
+    <!-- 審美治療 -->
+    <section id="sec01" class="container pt-60">
+      <h2 class="ttl">審美治療</h2>
+      <div class="mt-40">
+        <h3>審美治療について</h3>
+        <div class="row">
+          <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/cosmetic/cosmetic01.jpg"></figure>
+          <div class="col-md-12 col-lg-6">
+            <p>当院では『審美治療』として<span class="green">ホワイトニング</span>や<span class="green">セラミック治療</span>・<span class="green">矯正治療</span>などを提供しています。<br>
+              審美治療は『見た目の良さだけを求める高額な治療』というイメージがあるかもしれません。しかし、審美治療は見た目を良くしたいというご要望にお応えしつつ、保険診療では実現できない高い機能を求めることも可能です。</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>審美治療で使用する補綴物のご紹介</h3>
+        <div class="row">
+          <div class="col-md-12 col-lg-6 mb-20">
+            <h4 class="u-ttl">ハイブリッドセラミッククラウン</h4>
+            <div class="row">
+              <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/cosmetic/cosmetic02.jpg"></figure>
+              <div class="col-md-12 col-lg-6">
+                <p>セラミックとレジンを合わせた素材の被せ物です。柔軟性が高く、天然歯に近い硬度を持つことが特徴です。噛み合う歯に負担をかけないメリットがありますが、強度的には高いとは言えません。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 mb-20">
+            <h4 class="u-ttl">セラミッククラウン（ジルコニアクラウン）</h4>
+            <div class="row">
+              <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/cosmetic/cosmetic03.jpg"></figure>
+              <div class="col-md-12 col-lg-6">
+                <p>ジルコニアは人工ダイヤモンドとして装飾品や工業用品に使われる一方で、人工股関節としても使用される素材です。人体への親和性が高いことや耐久性が高いこと割れにくいことなどの特徴があります。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 mb-20">
+            <h4 class="u-ttl">ハイブリッドセラミックインレ－</h4>
+            <div class="row">
+              <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/cosmetic/cosmetic04.jpg"></figure>
+              <div class="col-md-12 col-lg-6">
+                <p>レジンとセラミックを混合した素材から作った詰め物です。柔軟性が高く、天然歯に近い硬度を持つことが特徴です。噛み合う歯に負担をかけないメリットがありますが、強度的には高いとは言えません。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 mb-20">
+            <h4 class="u-ttl">セラミックラミネートベニア</h4>
+            <div class="row">
+              <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/cosmetic/cosmetic05.jpg"></figure>
+              <div class="col-md-12 col-lg-6">
+                <p>ラミネートベニアは歯の表面を微小に削り、セラミックで作られた薄いシェルを貼り付ける方法です。歯の表面をキレイにできるだけでなく、すきっ歯を解消できるメリットもあります。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 mb-20">
+            <h4 class="u-ttl">ファイバーコア</h4>
+            <div class="row">
+              <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/cosmetic/cosmetic06.jpg"></figure>
+              <div class="col-md-12 col-lg-6">
+                <p>根幹治療をした際の土台です。耐久性に優れ、硬すぎず、歯にやさしいグラスファイバーを使用します。光を透過するので審美治療に適しています。（写真右側のものになります）</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>料金表</h4>
+        <table class="table-gray table table-bordered">
+          <tbody>
+            <tr>
+              <th>ハイブリッドセラミックインレー</th>
+              <td>1歯</td>
+              <td>33,000円（税込）</td>
+            </tr>
+            <tr>
+              <th>ハイブリッドセラミッククラウン</th>
+              <td>1歯</td>
+              <td>55,000円（税込）</td>
+            </tr>
+            <tr>
+              <th>オールセラミックインレー</th>
+              <td>1歯</td>
+              <td>55,000円（税込）</td>
+            </tr>
+            <tr>
+              <th>オールセラミッククラウン</th>
+              <td>1歯</td>
+              <td>88,000円～11,000円（税込）</td>
+            </tr>
+            <tr>
+              <th>ラミネートベニアクラウン</th>
+              <td>1歯</td>
+              <td>99,000円（税込）</td>
+            </tr>
+            <tr>
+              <th>ファイバーコア</th>
+              <td>自費</td>
+              <td>11,000円（税込）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ホワイトニング -->
+    <section id="sec02" class="container pt-60">
+      <h2 class="ttl">ホワイトニング</h2>
+      <div class="mt-40">
+        <h3>ホワイトニングについて</h3>
+        <div class="row flex-row-reverse">
+          <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/cosmetic/cosmetic07.jpg"></figure>
+          <div class="col-md-12 col-lg-6">
+            <p>当院では、患者様のさまざまなご希望にお応えするために、複数のホワイトニングを扱っています。ご家庭にてご自身で施術する<span class="red">『ホームホワイトニング』</span>、当院内で施術を行う<span class="red">『オフィスホワイトニング』</span>、上記の2つを併用する<span class="red">『デュアルホワイトニング』</span>の3種類です。</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>ホームホワイトニング</h3>
+        <p>ホームホワイトニングは、患者様ご自身が空いた時間にご自宅などで気軽に行うことができるホワイトニングです。<br>施術は患者様に合わせて作ったマウスピースに、専用の薬液を流し込んで装着するだけなので非常に簡単です。<br>
+          オフィスホワイトニングに比べると即効性はありませんが、オフィスホワイトニングより色戻りがしにくく、天然歯に近い自然な透明感があります。<span class="marker">『急がないけどじっくりしっかり白くしたい』</span>という方にお勧めです。</p>
+        <div class="mt-40">
+          <h4 class="u-ttl">ホームホワイトニングのメリット・デメリット</h4>
+          <p>ホームホワイトニングは、歯科医院を訪問してマウスピースを作ってもらい、完成したマウスピースを受け取ってしまえば、それ以降は自宅で施術できるので、何度も通院する必要がありません。<br>
+            自分自身が施術をするという事に不安を感じる人もいるかもしれませんが、当院では丁寧に説明を行いますのでご安心ください。<br>
+            ただ、マウスピースは、理想の白さになるまでは毎日装着することが推奨されているため、負担に感じる方もいるかもしれません。<br>
+            また、ホワイトニングの施術の後は、ワインやカレーなどの着色性が高い飲食物を摂ることや喫煙は避けていただきます。</p>
+        </div>
+        <div class="row mt-40">
+          <div class="col-md-12 col-lg-6 u-yellow">
+            <h5 class="u-ttl">ホームホワイトニングの<br>メリット</h5>
+            <ul class="point">
+              <li>歯への負担が少ない</li>
+              <li>自然な仕上がりが楽しめる</li>
+              <li>白さが持続する期間が長い</li>
+              <li>歯を削らなくても白くできる</li>
+              <li>好きな時間に施術ができる</li>
+              <li>刺激や痛みが少ない</li>
+              <li>色戻りが気になりだしたら、薬液を買えば再開できる</li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-6 u-yellow">
+            <h5 class="u-ttl">ホームホワイトニングの<br>デメリット</h5>
+            <ul class="point">
+              <li>オフィスホワイトニングほどの即効性はない</li>
+              <li>希望の白さになるまで毎日続ける必要がある</li>
+              <li>1回30分から1時間程度マウスピースを装着する手間がある</li>
+              <li>施術後に着色しそうな飲食物を避ける必要がある</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>オフィスホワイトニング</h3>
+        <p>オフィスホワイトニングは<span class="marker">当院内で施術</span>を行います。歯科衛生士が歯に薬液を塗り、専用の照射機で光を当てることで歯を白くする施術です。<br>ホームホワイトニングに比べると<span class="marker">即効性がある</span>ので、結婚式などのイベントを直近に控えた人に向いています。また、プロに施術してもらえる安心感があることも大きなメリットです。<br>ただし、ホームホワイトニングより濃度が高い薬液を使うので、施術当日は痛みがあったりしみる場合があります。</p>
+        <div class="mt-40">
+          <h4 class="u-ttl">オフィスホワイトニングのメリット・デメリット</h4>
+          <p>ホームホワイトニングの特徴は、白さを得られる即効性にあります。歯質などで効果に個人差はありますが、1回目の施術ではっきり違いが判るほど白くなる人も少なくありません。<br>
+            ホームホワイトニングとオフィスホワイトニングでは、白さの質に若干違いがあるので、どちらが自然な白さに見えるかは好みが分かれます。<br>また、オフィスホワイトニングは一気に白くする分、ホームホワイトニングより色戻りが早いデメリットがあります。</p>
+        </div>
+        <div class="row mt-40">
+          <div class="col-md-12 col-lg-6 u-yellow">
+            <h5 class="u-ttl">オフィスホワイトニングの<br>メリット</h5>
+            <ul class="point">
+              <li>短期間で歯を白くできる</li>
+              <li>ホームホワイトニングよりも白さの度合いが高い</li>
+              <li>歯科医院でプロに施術をしてもらうので安心感がある</li>
+              <li>事前に歯石の除去などのクリーニングを行うので口腔内環境も改善できる</li>
+              <li>施術中に痛みが出た場合はその場で診てもらうことができる</li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-6 u-yellow">
+            <h5 class="u-ttl">オフィスホワイトニングの<br>デメリット</h5>
+            <ul class="point">
+              <li>濃度が高い薬液を使うため、痛みを感じたりしみたりすることがある</li>
+              <li>むし歯や歯周病がある場合、事前の治療が必要な場合がある</li>
+              <li>ホームホワイトニングより色戻りが早い傾向がある</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>デュアルホワイトニング</h3>
+        <p>デュアルホワイトニングは、歯科医院内でまずオフィスホワイトニングを行い、その後ホームホワイトニングをご自宅で行っていただく施術です。オフィスホワイトニングの特徴である早く白さを得られる<span class="marker">即効性</span>と、ホームホワイトニングの特徴である<span class="marker">白さを長い期間にわたって持続</span>できるという、2種類のホワイトニングの良さを併せ持つ施術と言って良いでしょう。<br>
+          ホームホワイトニングとオフィスホワイトニングのそれぞれよりも、白さは長持ちします。</p>
+        <div class="mt-40">
+          <h4 class="u-ttl">デュアルホワイトニングのメリット・デメリット</h4>
+          <p>デュアルホワイトニングは2種類のホワイトニングを行うことで、それぞれのホワイトニングより白く、白さが持続できる期間が長いというメリットがあります。<br>
+            その一方で、両方の施術を行うので費用が高くなることや、薬液の濃度による痛みが起こる可能性があることなどは知っておきましょう。また、ホームホワイトニングの工程では毎日一定時間の施術を行う手間も発生しますから、2つのホワイトニングのデメリットも持っていると言えます。</p>
+        </div>
+        <div class="row mt-40">
+          <div class="col-md-12 col-lg-6 u-yellow">
+            <h5 class="u-ttl">デュアルホワイトニングの<br>メリット</h5>
+            <ul class="point">
+              <li>通院は2回程度で済む</li>
+              <li>高い度合いの白さを得ることができる</li>
+              <li>白さを持続できる期間が長く、色戻りが遅い特徴がある</li>
+              <li>施術の前に口腔内の環境を改善してもらえる</li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-6 u-yellow">
+            <h5 class="u-ttl">デュアルホワイトニングの<br>デメリット</h5>
+            <ul class="point">
+              <li>単体の方法より費用負担が比較的大きくなる</li>
+              <li>薬剤の使用回数が多いので、知覚過敏になる可能性がある</li>
+              <li>毎日一定時間マウスピースを付ける必要がある</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 料金表 -->
+    <section id="sec03" class="container pt-60">
+      <h2 class="ttl">料金表</h2>
+        <table class="table-green table table-bordered">
+        <tbody>
+          <tr>
+            <th>ホームホワイトニングコース</th>
+            <td>16,500円（税込）<br>追加ジェル（1週間分）　2,200円（税込）</td>
+          </tr>
+          <tr>
+            <th>オフィスホワイトニングコース</th>
+            <td>12歯まで（2回照射/週）　16,500円（税込）<br>13歯以上（2回照射/週）　22,000円（税込）</td>
+          </tr>
+          <tr>
+            <th>デュアルホワイトニングコース</th>
+            <td>12歯まで　33,000円（税込)<br>13歯以上　38,500円（税込）</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 医療費控除について -->
+    <section id="sec04" class="container pt-60">
+      <h2 class="ttl">医療費控除について</h2>
+      <div class="mt-40">
+        <p>医療費控除とは、自分自身や家族のために支払った年間の医療費が、一定の金額を超えた場合に所得控除を受けることができる制度です。<br>
+        生計を同一にする配偶者やご家族の分をまとめて申請することができます。<br>
+        医療費控除の対象となる金額は、次の式で計算した金額（最高200万円）です。</p>
+        <div class="mt-40 u-yellow">
+          <h4 class="u-ttl">医療費控除の計算式</h4>
+          <p><span class="red">医療費控除＝（支払った医療費の額－保険金等で補てんされた額）－10万円（最高200万円）<br>
+          <span class="red">※所得金額の合計が200万円未満の人はその5％の金額</span></span></p>
+        </div>
+        <p><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1120.htm" target="_blank" rel="noopener noreferrer">詳しくは国税庁のホームページへ</a></p>
+        <p>医療費控除を受けるには、確定申告をしなければなりません。<br>
+        確定申告には、医療費などの領収書が必要になりますので、医療費控除を受けようと考えている場合は必ず領収書をもらって保管するようにしてください。
+        </p>
+        <div class="row mt-40">
+          <div class="col-md-12 col-lg-6 u-yellow">
+            <h5 class="u-ttl">歯の治療で医療費控除の対象となる主なもの</h5>
+            <ul class="point">
+              <li>セラミックやジルコニアなどの補綴物</li>
+              <li>金属床義歯（メタルプレートデンチャー）の治療</li>
+              <li>インプラント治療</li>
+              <li>矯正の必要が認められた場合の矯正歯科治療<br>（診断書が必要です）</li>
+              <li>発育段階にあるお子様の歯列矯正</li>
+              <li>治療のための交通機関の通院費</li>
+              <li>お子さんの通院に付添いが必要な場合の交通機関の交通費</li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-6 u-yellow">
+            <h5 class="u-ttl">歯の治療で医療費控除の対象とならないもの</h5>
+            <ul class="point">
+              <li>美容や審美を目的とした治療<br>(審美矯正・ホワイトニングなど)</li>
+              <li>自家用車で通院したときのガソリン代や駐車場代</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

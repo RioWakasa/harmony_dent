@@ -1,0 +1,193 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/sub.css' %}">
+{% endblock head %}
+
+{% block content %}
+  <!-- タイトル -->
+  <div class="pagetitle">
+    <h1>
+      <span class="jp">予防歯科</span>
+      <span class="en">treatment</span>
+    </h1>
+  </div>
+
+  <main class="treatmentPage">
+    <!-- パンくずリスト -->
+    <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Treatment</li>
+      </ol>
+    </nav>
+
+    <!-- 予防治療について -->
+    <section id="sec01" class="container pt-60">
+      <h2 class="ttl">予防治療について</h3>
+        <div class="row">
+          <figure class="col-md-12 col-lg-6 text-center mb-3"><img class="img-fluid" decoding="async" src="../media/photo/treatment/treatment01.jpg"></figure>
+        <div class="col-md-12 col-lg-6">
+          <p>むし歯は、発症してしまうと削って除去することになります。歯を削った後は詰め物や被せ物で機能を補いますが、歯を削る行為は歯の寿命を縮めることにもなります。むし歯を予防して削らずに済ますことには大きな価値があるのです。<br>
+            また歯周病は、初期には自覚症状が少ないので気づきにくい病気です。そのため重症化してからご来院される方が多いのが実情です。歯を失ってから予防をしておけば良かったと思う前に、ぜひ当院にお越しください。</p>
+          <p><span class="marker">定期的に検診に来ていただければ、トラブルを予防し、問題を早期発見して解決することができます。</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 定期検診 -->
+    <section id="sec02" class="container pt-60">
+      <h2 class="ttl">定期検診</h2>
+      <div class="mt-40">
+        <h3>むし歯・歯周病を未然に防ぎましょう</h3>
+        <p>『歯医者に行くのは、痛くなってから、悪くなってから』では遅いのです。<br>
+          悪い所が見つかって、治療をするということの繰り返しにより、歯の寿命は短くなり、痛い思いをして治療を受けて、最終的には歯を失ってしまうことになります。</p>
+        <p>定期的に歯の汚れを落とすことにより（もちろんホームケアはさらに重要です）、未然にむし歯や歯周病を防ぎ、一生自分の歯で噛めるようにしていきたいと思っています。</p>
+      </div>
+      <div class="mt-40">
+        <h3>あなたの歯を守るための定期検診をお勧めしています！</h3>
+        <div class="u-yellow mb-20">
+          <p class="text-center">当院では、3～4ヶ月ごとの定期検診システムを採用しております。<br>
+            治療が終了しましたら、受付にてご予約をお取りになってください。<br class="pc-only">ご予約日が近くなりましたら、お葉書でお知らせいたします。</p>
+        </div>
+        <p class="green mb-20">
+          「やっと治療が終わったのに、もう通いたくない！」<br>
+          「痛いところはもうないから大丈夫！」<br>
+          「忙しくて歯医者なんか行っている暇がない！」</p>
+        <p class="mb-20">お忙しい皆様ですから、いくら『定期検診が大切です』『しっかりメンテナンスしないと自分の歯を守れません！』と聞いても、<span class="green">つい歯医者に行くのは後回しになってしまいます</span>よね。それに、やはり歯科医院はなるべく行きたくないところと感じている方が多いと思います。<br>
+          それを分かってでも、私たちが皆様に定期検診に来ていただきたいと繰り返し伝える理由はただ1つ。<span class="green">『皆様の健康な歯を守りたい』</span>ということです。</p>
+        <p>しっかりと歯みがきをしている方でも、自分では落とせない汚れがあります。そのため、定期的にメンテナンスをしないと、<span class="green">歯周病</span>になる確率が飛躍的に高まります。<span class="green">歯を失う一番の原因は歯周病なのです</span>。しかも、歯周病になると<span class="green">嫌な口臭の原因</span>にもなってしまうのです。<br>
+          さらに、<span class="green">定期検診に来るだけで、守れる歯の本数は10本近くも変わります</span>。例えば、インプラントを入れると<span class="green">1本約30万円</span>ほどかかります。そして何よりも、<span class="green">歯を失うと、自分の歯で美味しく健康に食事を楽しむという人生の豊かさが失われてしまう</span>のです。</p>
+        <div class="mt-40">
+          <h4 class="u-ttl">定期検診の勧め</h4>
+          <p>悪い所が無くても、定期的にお口のクリーニングを受けると、そうでない場合に比べて歯が残る数が大変違ってきます。<br>
+            お口の健康を維持するためには、続けてお口のクリーニングに通うことが大切です。</p>
+          <p>むし歯や歯周病を未然に防ぐことにより、快適な生活が送ることができるだけでなく、痛い思いをして治療を受ける必要もなく、長い目で見ると治療費がかからない分、経済的です。</p>
+        </div>
+        <div class="mt-40 mb-20 text-center"><img class="img-fluid" decoding="async" src="../media/photo/treatment/treatment02.png"></div>
+        <p class="text-end">長崎大学・新庄教授のデータより</p>
+      </div>
+    </section>
+
+    <!-- 予防の方法について -->
+    <section id="sec03" class="container pt-60">
+      <h2 class="ttl">予防の方法について</h2>
+      <div class="mt-40">
+        <h3>フッ素の重要性</h3>
+        <div class="row">
+          <div class="col-md-12 col-lg-8 mb-3">
+            <p>フッ素は、<span class="green">抗菌効果や歯質強化・歯の再石灰化に大きく効果があり</span>、歯に取り込まれることにより、むし歯になりにくい強い歯にします。<br>
+              乳歯や生え始めの永久歯は、<span class="green">歯の質が特に弱く、むし歯になりやすいので、むし歯予防にはフッ素を効果的に使うことが重要です</span>。<br>
+              当院では、定期検診（3ヶ月ごと）で歯の汚れを落とした後、歯に直接フッ素を塗り、むし歯に強い歯へと育ていきます。</p>
+          </div>
+          <figure class="col-md-12 col-lg-4 mx-auto"><img class="img-fluid" decoding="async" src="../media/photo/treatment/treatment03.png"></figure>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>当院でお勧めしている歯磨き法『つまようじ法』</h3>
+        <p>院長が出身の岡山大学歯学部で考案された歯磨き法で、<span class="marker">歯ブラシの毛先を歯と歯の間に入れて汚れを落とす方法</span>です。<br>
+          汚れがつきやすく取れにくい歯と歯の間・歯と歯茎の間の汚れを徹底的に落とすことにより、むし歯や歯周病の予防、歯肉炎や歯周病の改善に効果があります。<br>
+          詳しくは、当院にてお気軽におたずねください。</p>
+        <div class="mt-40">
+          <h4 class="u-ttl">つまようじ法に最適なV7歯ブラシ</h4>
+          <div class="row">
+            <div class="col-md-12 col-lg-8 mb-3">
+              <p>当院でお勧めしているブラッシング法『つまようじ法』に最適の歯ブラシ『V7（ブイセブン）』についてご紹介します。</p>
+              <p>この歯ブラシは、2列のブラシの毛先がV字型に並んでいて、歯と歯の間に入りやすいように設計されています。</p>
+              <p>歯周病は歯と歯の間から始まります。歯と歯の間を『つまようじ法』でブラッシング。歯垢を取り除き、歯茎をマッサージすることによって、歯周病は十分に予防でき症状も改善できます。<br>
+                『V7』は当院でも販売しています。お気軽にご相談ください。</p>
+            </div>
+            <figure class="col-md-12 col-lg-4 mx-auto"><img class="img-fluid" decoding="async" src="../media/photo/treatment/treatment04.jpg"></figure>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>リスク検査</h3>
+        <div class="row">
+          <div class="col-md-12 col-lg-8 mb-3">
+            <p><span class="green">むし歯・歯周病のなりやすさを検査します</span><br>
+              むし歯や歯周病のなりやすさ・なりにくさは、人によって異なります。口の中の条件が異なるからです。<br>
+              当院では、むし歯や歯周病のリスク検査を行い、リスクを知って、リスクに応じたケアを進めていきます。</p>
+          </div>
+          <figure class="col-md-12 col-lg-4 mx-auto"><img class="img-fluid" decoding="async" src="../media/photo/treatment/treatment05.jpg"></figure>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>キシリトールについて</h3>
+        <h4 class="u-ttl">キシリトールの特徴</h4>
+        <ul class="point ">
+          <li>むし歯の原因”酸”を作らない</li>
+          <li>むし歯菌の数を減らす</li>
+          <li>むし歯になりかけた部分を元に戻す（再石灰化）</li>
+        </ul>
+        <div class="mt-20">
+        <h4 class="u-ttl">キシリトールの効果的なとり方</h4>
+          <ul class="point">
+            <li>食事やおやつの後には必ず噛む</li>
+            <li>寝る前に必ず噛む</li>
+            <li>長期間続けて使用する</li>
+          </ul>
+          <p>誰もが簡単にむし歯予防を行えるのは、素晴らしいことだとは思いませんか。さっそく実践して、健康なお口を維持しましょう！</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 歯周病の予防 -->
+    <section id="sec03" class="container pt-60">
+      <h2 class="ttl">歯周病の予防</h2>
+      <div class="mt-40">
+        <h3>歯周病と全身疾患の関係</h3>
+        <p>歯周病を放置すると、さまざまな病気の原因になります。お口のケアをして、全身の健康につなげていきましょう。</p>
+        <dl class="mt-40 u-dl">
+          <dt>心臓病</dt>
+          <dd>歯周病菌の作り出す物質が血液中に流れ、心筋梗塞や狭心症を引き起こす原因となると考えられています。</dd>
+          <dt>糖尿病</dt>
+          <dd>歯周病は糖尿病を悪化させる要因となり、糖尿病は歯周病の治癒を悪くします。</dd>
+          <dt>低体重児出産</dt>
+          <dd>歯周病になると体内に産生される物質が、血流を渡って胎盤に流入し、早産を引き起こします。</dd>
+        </dl>
+      </div>
+      <!-- プロバイオティクス -->
+      <div class="mt-40 u-yellow">
+        <h4 class="u-ttl">プロバイオティクスを利用した<br class="sp-only">歯周病予防・口臭予防</h4>
+        <div class="row">
+          <figure class="col-md-12 col-lg-6"><img class="img-fluid" decoding="async" src="../media/photo/L8020.jpg"></figure>
+          <div class="col-md-12 col-lg-6">
+            <p><span class="green">L8020乳酸菌とは</span>歯周病・むし歯になったことのない健康な子どもの口の中から発見された<span class="green">ヒト由来の乳酸菌</span>です。正式名称は「ラクトバチルスラムノーザスKO3株」といいます。<br>
+              歯周病菌・むし歯菌の発育を阻止する<span class="green">制菌効果のある乳酸菌</span>の一種で、ヒトの口腔内から<span class="green">5種類の歯周病菌とむし歯菌・カンジダ菌を効果的に抑制</span>し、口腔内環境を健康に保ちます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 母子のむし歯予防 -->
+    <section id="sec04" class="container pt-60">
+      <h2 class="ttl">母子のむし歯予防</h2>
+      <div class="mt-40">
+        <h3>母子感染の予防</h3>
+        <div class="row">
+          <div class="col-md-12 col-lg-8 mb-3">
+            <p>お母さんのむし歯が、こどもに感染する『母子感染』が問題になっています。</p>
+            <p><span class="green">『母子感染を防ぐために気をつけたいこと』</span><br>口移しでものを食べさせたり、大人が使った箸で赤ちゃんに食事をさせたりすると、ミュータンス菌などの細菌が増えて、お口の病気の原因となることがあります。<br>
+              生後1歳半から3歳がむし歯菌の住み着く時期です。<br>
+              しかし、こどもとのスキンシップをやめることはありません。何よりも、お母さんのむし歯の治療や予防が大切なのです。<br>
+              お母さんのお口の中のむし歯菌の数が少ないと、こどもがむし歯になる可能性が低くなります。お母さんのお口の健康状態について歯科医院で検査してもらい、むし歯予防のアドバイスをしてもらいましょう。お母さんのお口をきれいにすると、こどももむし歯ができにくくなりますね。</p>
+          </div>
+          <figure class="col-md-12 col-lg-4 mx-auto"><img class="img-fluid" decoding="async" src="../media/photo/treatment/treatment06.jpg"></figure>
+        </div>
+      </div>
+      <div class="mt-40">
+        <h3>赤ちゃんの健康のために（妊婦の予防）</h3>
+        <div class="row">
+          <div class="col-md-12 col-lg-8 mb-3">
+            <p>妊娠中のお口の中は、生活習慣や体質の変化から、通常よりもむし歯や歯周病になりやすいのです。<br>
+              歯周病の進んだ妊婦さんには、早産や低体重児などの危険性が高くなることが報告されています。また、母子感染によって乳幼児へむし歯がうつってしまうことがあります。<br>
+              妊娠中でもむし歯や歯周病の治療は可能です。しかし、お母さんの口の中を清潔にしておくことが、赤ちゃんにとってもっとも大切です。歯科医院で、妊娠中のお口の健康をチェックし、歯のクリーニングを受けましょう。</p>
+          </div>
+          <figure class="col-md-12 col-lg-4 mx-auto"><img class="img-fluid" decoding="async" src="../media/photo/treatment/treatment07.jpg"></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

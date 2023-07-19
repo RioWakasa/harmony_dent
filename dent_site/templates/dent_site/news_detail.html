@@ -1,0 +1,305 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> | 岡山市の歯科医院「医療法人Melody わかさハーモニー歯科」</title>
+
+  <script src="{% static 'dent_site/js/slide.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{% static 'dent_site/js/calender.js' %}"></script>
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/reset.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/header.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/sub.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/footer.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/responsive.css' %}">
+</head>
+
+  <body>
+    <!-- 葉の背景 -->
+    <div class="pc-only">
+      <div class="position-absolute leaf">
+        <img class="w-100 img-fluid" src="../../media/img/header/leaf.png">
+      </div>
+    </div>
+  
+    <!-- ヘッダー -->
+    <header>
+      <!-- ロゴ、予約、電話 -->
+      <div class="h-container back-green text-md-center">
+        <div class="responsive-container d-xl-flex justify-content-center">
+          <!-- ロゴ -->
+          <div class="my-auto">
+            <a href="#">
+              <img class="h-logo img-fluid" src="../../media/img/header/logo.png" alt="岡山市の歯科医院「医療法人Melody わかさハーモニー歯科」">
+            </a>
+          </div>
+          <!-- 予約、電話 -->
+          <div class="pc-only">
+            <div class="d-flex justify-content-xl-between justify-content-md-center">
+              <!-- ネット予約バナー -->
+              <a class="h-banner my-auto" href="https://ssl.haisha-yoyaku.jp/s5747179/login/serviceAppoint/index?SITE_CODE=hp">
+                <div>
+                  <p>24時間 受付中</p>
+                  <p><span>ネット予約はこちら</span></p>
+                </div>
+              </a>
+              <!-- 電話番号、スケジュール -->
+              <div class="h-tel">
+                <a href="tel:0869033677" class="tel">086-903-3677</a>
+                <div class="h-schedule">
+                  <p><span class="week">月火水金</span><span class="time">9:00～13:00 / 15:00～19:00</span></p>
+                  <p><span class="week">土曜日</span><span class="time">9:00～12:30 / 14:00～17:00</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="gMenu sp-only">
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn">
+              <span class="navicon"></span>
+            </label>
+            <ul class="menu">
+              <div>
+                <a href="tel:0869033677" class="tel text-center red">086-903-3677</a>
+                <a class="h-banner mb-2" href="https://ssl.haisha-yoyaku.jp/s5747179/login/serviceAppoint/index?SITE_CODE=hp">
+                  <p>24時間 受付中</p>
+                  <p><span>ネット予約はこちら</span></p>
+                </a>
+                <p class="text-center"><span class="week">月火水金</span><span class="time">9:00～13:00 / 15:00～19:00</span></p>
+                <p class="text-center"><span class="week">土曜日</span><span class="time">9:00～12:30 / 14:00～17:00</span></p>
+                <li><a href="{% url 'dent_site:home' %}">ホーム</a></li>
+                <li><a href="{% url 'dent_site:concept' %}">コンセプト</a></li>
+                <li><a href="{% url 'dent_site:staff' %}">スタッフ</a></li>
+                <p>診療案内</p>
+                <ul class="point d-flex flex-wrap">
+                  <li><a href="{% url 'dent_site:general' %}">一般歯科</a></li>
+                  <li><a href="{% url 'dent_site:pediatric' %}">小児歯科</a></li>
+                  <li><a href="{% url 'dent_site:treatment' %}">予防歯科</a></li>
+                  <li><a href="{% url 'dent_site:cosmetic' %}">審美治療・ホワイトニング</a></li>
+                  <li><a href="{% url 'dent_site:orthodontics' %}">矯正歯科</a></li>
+                  <li><a href="{% url 'dent_site:implant' %}">入れ歯・インプラント治療</a></li>
+                </ul>
+                <li><a href="{% url 'dent_site:recruit' %}">採用情報</a></li>
+                <ul class="point">
+                  <a href="{% url 'dent_site:access' %}">医院案内・アクセス</a>
+                  <li><a href="{% url 'dent_site:hkc' %}">ハーモニーキッズクラブ</a></li>
+                </ul>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  
+    <!-- nav -->
+    <div class="g-navi back-green position-sticky w-100">
+      <nav class="pc-only mx-auto">
+        <ul class="gnavi__lists d-flex">
+          <a href="{% url 'dent_site:home' %}" class="gnavi__list">
+            <li>
+              <span class="n-img"><img class="img-fluid" src="../../media/img/header/home.png"></span>
+              <span class="jp">ホーム</span>
+            </li>
+          </a>
+          <a href="{% url 'dent_site:concept' %}" class="gnavi__list">
+            <li>
+              <span class="n-img"><img class="img-fluid" src="../../media/img/header/concept.png"></span>
+              <span class="jp">コンセプト</span>
+            </li>
+          </a>
+          <a href="{% url 'dent_site:staff' %}" class="gnavi__list">
+            <li>
+              <span class="n-img"><img class="img-fluid" src="../../media/img/header/staff.png"></span>
+              <span class="jp">スタッフ紹介</span>
+            </li>
+          </a>
+          <li class="gnavi__list">
+            <a href="#">
+              <span class="n-img"><img class="img-fluid" src="../../media/img/header/treatment.png"></span>
+              <span class="jp">診療案内</span>
+            </a>
+            <ul class="dropdown__lists">
+              <li class="dropdown__list line-center">
+                <a href="{% url 'dent_site:general' %}">一般歯科</a>
+              </li>
+              <li class="dropdown__list line-center">
+                <a href="{% url 'dent_site:pediatric' %}">小児歯科</a>
+              </li>
+              <li class="dropdown__list line-center">
+                <a href="{% url 'dent_site:treatment' %}">予防治療</a>
+              </li>
+              <li class="dropdown__list">
+                <a href="{% url 'dent_site:cosmetic' %}">審美治療・<br>ホワイトニング</a>
+              </li>
+              <li class="dropdown__list line-center">
+                <a href="{% url 'dent_site:orthodontics' %}">矯正歯科</a>
+              </li>
+              <li class="dropdown__list">
+                <a href="{% url 'dent_site:implant' %}">入れ歯・<br>インプラント治療</a>
+              </li>
+            </ul>
+          </li>
+          <a href="{% url 'dent_site:recruit' %}" class="gnavi__list">
+            <li>
+              <span class="n-img"><img class="img-fluid" src="../../media/img/header/recruit.png"></span>
+              <span class="jp">採用情報</span>
+            </li>
+          </a>
+          <li class="gnavi__list" style="padding: 8px 10px 0 10px; width: 21%;">
+            <a href="{% url 'dent_site:access' %}">
+              <span class="n-img"><img class="img-fluid" src="../../media/img/header/access.png"></span>
+              <span class="jp">医院案内・アクセス</span>
+            </a>
+            <ul class="dropdown__lists">
+              <li class="dropdown__list">
+                <a href="{% url 'dent_site:hkc' %}">ハーモニー<br>キッズクラブ</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="pagetitle">
+      <h1>
+        <span class="jp">ニュース</span>
+        <span class="en">News</span>
+      </h1>
+    </div>
+
+    <main>
+      <!-- パンくずリスト -->
+      <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item" aria-current="page">News</li>
+          <li class="breadcrumb-item active" aria-current="page">{{ object.title }}</li>
+        </ol>
+      </nav>
+
+      <section class="container">
+        <h3 class="mb-3">{{ object.title }}</h3>
+          <div class="contents">
+            <div class="py-2">
+              <time style="font-size: 13px;">{{ object.date }}</time>
+              {% autoescape off %}
+              {{ object.text }}
+              {% endautoescape %}
+            </div>
+          </div>
+      </section>
+    </main>
+    
+    <!-- フッター -->
+    <footer>
+      <div class="container">
+      <!-- マップ -->
+      <div class="row mt-40 mb-40">
+        <div class="map col-md-12 col-lg-6 mb-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d6564.63538712911!2d133.8611443!3d34.646678900000005!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m0!4m5!1s0x3553ff5112725d1b%3A0x5faeb4b27aa2fb07!2z44CSNzAxLTAxNTEg5bKh5bGx55yM5bKh5bGx5biC5YyX5Yy65bmz6YeO77yV77yT77yU4oiS77yR77yVIOOCj-OBi-OBleODj-ODvOODouODi-ODvOatr-enkQ!3m2!1d34.6466789!2d133.8611443!5e0!3m2!1sja!2sjp!4v1574907361218!5m2!1sja!2sjp"></iframe>
+        </div>
+        <div class="col-md-12 col-lg-6 text-center">
+          <!-- ロゴ、住所、アクセス -->
+          <div class="mb-3">
+            <figure class="mb-3">
+              <a href="#">
+                <img class="img-fluid" src="../../media/img/footer/f-logo.png" alt="">
+              </a>
+            </figure>
+            <p class="address mb-3">
+              <span class="badge back-green">所在地</span>
+              <br class="sp-only">〒701-0151　岡山県岡山市北区平野534-15
+            </p>
+            <ul class="list">
+              <li>JR山陽本線『庭瀬駅』より徒歩13分</li>
+              <li>岡電バス・中鉄バス・両備バス、倉敷方面行き<br>『平野停留所』下車</li>
+              <li>駐車場：有</li>
+            </ul>
+          </div>
+          <!-- 電話、バナー -->
+          <div class="mb-3">
+            <div class="f-tel">
+              <div class="tel">
+                <a href="tel:0869033677">
+                  086-903-3677
+                </a>
+              </div>
+              <div class="f-banner ms-3">
+                <a href="#">
+                  <p>24時間 受付中</p>
+                  <p><span>ネット予約はこちら</span></p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- スケジュール表 -->
+          <table class="f-schedule table table-bordered">
+            <thead class="thead-green">
+              <tr>
+                <th scope="col">診療時間</th>
+                <th scope="col">月</th>
+                <th scope="col">火</th>
+                <th scope="col">水</th>
+                <th scope="col">木</th>
+                <th scope="col">金</th>
+                <th scope="col">土</th>
+                <th scope="col">日</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">9:00～13:00</th>
+                <td>○</td>
+                <td>○</td>
+                <td>○</td>
+                <td>×</td>
+                <td>○</td>
+                <td>▲</td>
+                <td>×</td>
+              </tr>
+              <tr>
+                <th scope="row">15:00～19:00</th>
+                <td>○</td>
+                <td>○</td>
+                <td>○</td>
+                <td>×</td>
+                <td>○</td>
+                <td>▲</td>
+                <td>×</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="caption">
+            <span class="color">▲</span> 9:00～12:30 / 14:00～17:00 <br>［休診日］木曜・日曜・祝日
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="back-yellow sns">
+        <div class="mx-auto d-flex justify-content-evenly">
+          <a href="https://www.instagram.com/hamonichike/" target="_blank" rel="noopener noreferrer" title="@hamonichike" class="sbi_header_link">
+            <img class="img-fluid" src="../../media/img/footer/Instagram.png" alt="">
+          </a>
+          <a href="https://www.facebook.com/people/%E3%82%8F%E3%81%8B%E3%81%95-%E3%83%8F%E3%83%BC%E3%83%A2%E3%83%8B%E3%83%BC%E6%AD%AF%E7%A7%91/100026159666349/" target="_blank" rel="noopener noreferrer" title="@hamonichike" class="sbi_header_link">
+            <img class="img-fluid" src="../../media/img/footer/fb.png" alt="">
+          </a>
+          <a href="">
+            <img class="img-fluid" src="../../media/img/footer/twitter.png" alt="">
+          </a>
+          <a href="">
+            <img class="img-fluid" src="../../media/img/footer/LINE.png" alt="">
+          </a>
+          <a href="{% url 'dent_site:privacy' %}" class="privacy">プライバシー<br class="sp-only">ポリシー</a>
+        </div>
+      </div>
+      <small><p class="copyright">© 2019 医療法人Melody わかさハーモニー歯科.</p></small>
+    </footer>
+  </body>
+</html>

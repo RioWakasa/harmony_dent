@@ -1,0 +1,283 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/sub.css' %}">
+{% endblock head %}
+
+{% block content %}
+<!-- タイトル -->
+<div class="pagetitle">
+  <h1>
+    <span class="jp">医院案内・アクセス</span>
+    <span class="en">Access</span>
+  </h1>
+</div>
+
+<main>
+  <!-- パンくずリスト -->
+  <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Access</li>
+    </ol>
+  </nav>
+
+  <!-- メニュー -->
+  <section id="sec00" class="container">
+    <div id="menu">
+      <ul class="flex-wrap">
+        <li><a href="#sec01">アクセス</a></li>
+        <li><a href="#sec02">医院概要</a></li>
+        <li><a href="#sec03">医院風景</a></li>
+        <li><a href="#sec04">設備紹介</a></li>
+      </ul>
+    </div>
+</section>
+
+<!-- アクセス -->
+<section id="sec01" class="container pt-60">
+  <h2 class="ttl">アクセス</h2>
+  <div class="ratio ratio-16x9 w-75 mx-auto">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d6564.63538712911!2d133.8611443!3d34.646678900000005!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m0!4m5!1s0x3553ff5112725d1b%3A0x5faeb4b27aa2fb07!2z44CSNzAxLTAxNTEg5bKh5bGx55yM5bKh5bGx5biC5YyX5Yy65bmz6YeO77yV77yT77yU4oiS77yR77yVIOOCj-OBi-OBleODj-ODvOODouODi-ODvOatr-enkQ!3m2!1d34.6466789!2d133.8611443!5e0!3m2!1sja!2sjp!4v1574907361218!5m2!1sja!2sjp" width="1075" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+  <div class="mt-40">
+    <h3>アクセスルート</h3>
+    <div class="mt-40">
+      <h4 class="u-ttl">電車</h4>
+      <p>JR山陽本線『庭瀬駅』より徒歩13分・タクシー5分</p>
+    </div>
+    <div class="mt-40">
+      <h4 class="u-ttl">バス</h4>
+      <p>岡電バス・中鉄バス・両備バス　倉敷方面行き『木工センター前停留所』下車</p>
+    </div>
+    <div class="mt-40">
+      <h4 class="u-ttl">お車でお越しの場合</h4>
+      <p>専用駐車場：有</p>
+    </div>
+  </div>
+</section>
+
+<!-- 医療概要 -->
+<section id="sec02" class="container pt-60">
+  <h2 class="ttl">医院概要</h2>
+  <div class="row justify-content-evenly">
+    <figure class="col-md-12 col-lg-6"><img class="img-fluid" decoding="async" src="../media/photo/access/hermony.jpg"></figure>
+    <div class="col-md-12 col-lg-6">
+      <table class="table-green table table-bordered">
+        <tbody>
+          <tr>
+            <th>院名</th>
+            <td>医療法人Merody わかさハーモニー歯科</td>
+          </tr>
+          <tr>
+            <th>住所</th>
+            <td>〒701-0151　岡山市北区平野534-15</td>
+          </tr>
+          <tr>
+            <th>電話番号</th>
+            <td><a href="tel:0869033677" class="link">086-903-3677</a></td>
+          </tr>
+          <tr>
+            <th>FAX番号</th>
+            <td>086-903-3678</td>
+          </tr>
+          <tr>
+            <th>診療時間</th>
+            <td>9:00～13:00 / 15:00～19:00<br>土曜日9:00～12:30 / 14:00～17:00</td>
+          </tr>
+          <tr>
+            <th>休診日</th>
+            <td>木曜・日曜・祝日</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 医療風景 -->
+<section id="sec03" class="container pt-60">
+  <h3>医院風景</h3>
+  <div class="row mt-40">
+    <div class="col-md-12 col-lg-4 mb-3">
+      <figure class="mb-20"><img class="img-fluid" decoding="async" src="../media/photo/access/reception.jpg"></a></figure>
+      <h4 class="u-ttl">受付</h4>
+      <p>呼吸をする土といわれる珪藻土を用いた壁や、木の素材を生かした梁と柱が特徴の温かい院内です。</p>
+    </div>
+    <div class="col-md-12 col-lg-4 mb-3">
+      <figure class="mb-20"><img class="img-fluid" decoding="async" src="../media/photo/access/waiting_room.jpg"></a></figure>
+      <h4 class="u-ttl">待合室</h4>
+      <p>吹き抜け天井の開放的な待合室は、リラックスしてお過ごしいただける空間になるよう設計しております。</p>
+    </div>
+    <div class="col-md-12 col-lg-4 mb-3">
+      <figure class="mb-20"><img class="img-fluid" decoding="async" src="../media/photo/access/counseling.jpg"></a></figure>
+      <h4 class="u-ttl">カウンセリングルーム</h4>
+      <p>個室のカウンセリングルームにて、お口のお悩みや当院に対するご希望をお伺いしております。歯科医院に対する不満や治療のご要望など、担当のスタッフへお気軽にご相談ください。</p>
+    </div>
+    <div class="col-md-12 col-lg-4 mb-3">
+      <figure class="mb-20"><img class="img-fluid" decoding="async" src="../media/photo/access/monitor.jpg"></a></figure>
+      <h4 class="u-ttl">各チェアー設置のモニター</h4>
+      <p>各診療台にモニターを設置し、レントゲン写真や口腔内写真をお見せしながら説明を行っています。通常はビデオやDVDをご覧いただいております。</p>
+    </div>
+    <div class="col-md-12 col-lg-4 mb-3">
+      <figure class="mb-20"><img class="img-fluid" decoding="async" src="../media/photo/access/kids_room.jpg"></a></figure>
+      <h4 class="u-ttl">キッズスペース</h4>
+      <p>お子様連れの患者様が、診療中にお子様を遊ばせることができます。</p>
+    </div>
+    <div class="col-md-12 col-lg-4 mb-3">
+      <figure class="mb-20"><img class="img-fluid" decoding="async" src="../media/photo/access/pianissimo.jpg"></a></figure>
+      <h4 class="u-ttl">デンタルケアサロン ピアニッシモ</h4>
+      <p>予防とクリーニング専用の「デンタルケアサロン ピアニッシモ」は、いつまでも健康な歯と歯茎を保ちたい・美しく清潔な口元でいたいという願いを実現させるための空間です。</p>
+    </div>
+    <div class="col-md-12 col-lg-4 mb-3">
+      <figure class="mb-20"><img class="img-fluid" decoding="async" src="../media/photo/access/barrier_free.jpg"></a></figure>
+      <h4 class="u-ttl">完全バリアフリー設計</h4>
+      <p>駐車場から診療室に至るまで段差がなく、土足で入っていただけるため、車椅子の患者様やベビーカーを引いて来院するお母様方も安心です。</p>
+    </div>
+    <div class="col-md-12 col-lg-4 mb-3">
+      <figure class="mb-20"><img class="img-fluid" decoding="async" src="../media/photo/access/courtyard.jpg"></a></figure>
+      <h4 class="u-ttl">中庭</h4>
+      <p>診療室から望める医院の中庭は、綺麗に整備された憩いの場です。</p>
+    </div>
+    <div class="col-md-12 col-lg-4 mb-3">
+      <figure class="mb-20"><img class="img-fluid" decoding="async" src="../media/photo/access/signboard.jpg"></a></figure>
+      <h4 class="u-ttl">看板</h4>
+  </div>
+</section>
+
+<!-- 設備紹介 -->
+<section id="sec04" class="container pt-60 circle">
+  <h2 class="ttl">設備紹介</h2>
+  <div class="mt-40">
+    <h3>歯科用コーンビームCT</h3>
+    <div class="row">
+      <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/access/CT.jpg"></figure>
+      <div class="col-md-12 col-lg-6">
+        <p>歯の中や骨の中まで立体的に見えるので、正確な治療計画を立てることができます。<br>
+          当院はインプラント治療をはじめ、一般歯科・口腔外科治療にも必要に応じてCTを利用しており、<span class="marker">日本歯科放射線学会専門医・指導医の資格を持った院長による、専門性の高い診断</span>を行います。<br>
+          （通常のレントゲン撮影のほうが診断しやすい場合もあるため、使用しない場合もあります）</p>
+        <a class="d-btn btn btn-success mt-5" href="https://www.harmony-dent.com/implant/#sec11" role="button">詳しくはこちら</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-40">
+    <h3>デジタルエックス線システム</h3>
+    <div class="row">
+      <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/access/X-ray.jpg"></figure>
+      <div class="col-md-12 col-lg-6">
+        <p>当院は、<span class="marker">従来に比べエックス線量が1/4に軽減されるデジタルエックス線システム</span>を導入しています。<br>
+          各ユニットチェアにはモニターが設置され、患者様への説明時にエックス線画像や口腔内写真を表示し、分かりやすい説明が可能となっています。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-40">
+    <h3>口腔内カメラ（パットカム ワイヤレス）</h3>
+    <div class="row">
+      <div class="col-md-12 col-lg-6">
+        <figure class="mb-20"><img class="img-fluid" decoding="async" src="../media/photo/access/camera.jpg"></figure>
+        <figure class="mb-3"><img class="img-fluid" src="../media/photo/access/camera2.png"></figure>
+      </div>
+      <div class="col-md-12 col-lg-6">
+        <p>通常では見ることが難しい奥歯や歯の裏側などを、スマホ・タブレットとワイヤレス接続して画像を見ることができます。<br>
+          口腔内カメラにより、患者様に口腔内および治療の状況をはっきりと見ていただけますので、分かりやすい説明ができます。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-40">
+    <h3>マイクロスコープ</h3>
+    <div class="row">
+      <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid"decoding="async" src="../media/photo/access/microscope.jpg"></figure>
+      <div class="col-md-12 col-lg-6">
+        <p>患者様へより高い精度での診療を提供するため、<span class="marker">高精度手術用顕微鏡（マイクロスコープ）を導入</span>しています。<br>
+          高精度手術用顕微鏡（マイクロスコープ）は、患者様の歯をより詳細に診察するために導入しました。<br>
+          <span class="marker">細部の観察が可能となり、口腔疾患の再発予防</span>にもつながります。<br>
+          詳しくは、当院にてお気軽におたずねください。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-40">
+    <h3>高周波治療器</h3>
+    <div class="row">
+      <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/access/high_frequency.jpg"></figure>
+      <div class="col-md-12 col-lg-6">
+        <p>高周波治療とは、電波を体に作用させ、温熱を発生させることにより、血液循環を良くしたり、殺菌作用・抗炎症作用・鎮痛・鎮静作用などを及ぼす治療法です。<span class="marker">痛みが少なく治癒も早まる上、人体に無害です。</span><br>
+          歯周病・歯の根の治療・知覚過敏・顎関節症・口内炎・急性炎症の疼痛緩和・口腔乾燥症・神経痛・神経麻痺・メラニン除去など、さまざまな疾患に応用できます。<br>
+          詳しくは、当院にてお気軽におたずねください。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-40">
+    <h3>バイブラジェクト</h3>
+    <div class="row flex-row-reverse">
+      <figure class="col-md-12 col-lg-4 text-center mb-3"><img class="img-fluid" decoding="async" src="../media/photo/access/VibraJect.jpg"></figure>
+      <div class="col-md-12 col-lg-8">
+        <p>歯の治療の痛みは怖いですよね。当院では、痛みが苦手な方でも安心して通える歯科医院を目指しています。<br>
+          バイブラジェクトは、<span class="marker">麻酔をするときの痛みを軽減させるための器具</span>です。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-40">
+    <h3>電動麻酔器</h3>
+    <div class="row flex-row-reverse">
+      <figure class="col-md-12 col-lg-4 mb-3"><img class="img-fluid" decoding="async" src="../media/photo/access/anesthesia.jpg"></figure>
+      <div class="col-md-12 col-lg-8">
+        <p>当院では少しでも痛くない麻酔のために、針を使わない表面麻酔や電動注射器などを使用しています。</p>
+        <div class="mt-20">
+          <h5 class="marker">なるべく痛みの少ない麻酔を行うための工夫</h5>
+          <ul class="point">
+            <li>注射する前に表面麻酔を行い、針を刺入する粘膜表面をしびれさせます。</li>
+            <li>バイブラジェクトを用いて、麻酔をするときの痛みを軽減します。</li>
+            <li>電動麻酔器にて、一定の速度で麻酔液を注入することにより、注入時の痛みを軽減します。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-40">
+    <h3>滅菌システム</h3>
+    <div class="mt-40">
+      <h5 class="u-ttl">クラスBオートクレーブ</h5>
+      <div class="row">
+        <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" class="circle" src="../media/photo/access/autoclave.jpg"></figure>
+        <div class="col-md-12 col-lg-6">
+          <p>血液や体液と接触する可能性のある材料や器具には様々な形状のものがあり、それぞれの形状に適した滅菌サイクルで滅菌する必要があります。<br>
+            当院では、<span class="marker">すべての形状の被滅菌物を滅菌できるヨーロッパ基準クラスBのオートクレーブを導入</span>しています。<br>
+            また、1処置毎・患者様毎に、切削用のハンドピースを滅菌し、安心・安全に使用できるよう徹底しております。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-40">
+      <h5 class="u-ttl">ガス滅菌</h5>
+      <div class="row">
+        <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" decoding="async" class="circle" src="../media/photo/access/gas.jpg"></figure>
+        <div class="col-md-12 col-lg-6">
+          <p><span class="marker">熱に弱い器具を滅菌できるホルマリンガス滅菌器（ホルホープ）を使用</span>し、完全滅菌・消毒にこだわっています。</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-40">
+      <h5 class="u-ttl">感染防止対策</h5>
+      <div class="row flex-row-reverse">
+        <figure class="col-md-12 col-lg-4 text-center mb-3"><img class="img-fluid" decoding="async" class="circle" src="../media/photo/access/infection_prevention.jpg"></figure>
+        <div class="col-md-12 col-lg-8">
+          <p>当院では、<span class="marker">院内感染の防止に特に力を入れています。</span><br>
+            できる限りディスポーザブル製品を用いています。（紙コップ・紙エプロン・マスク・ゴム手袋など）<br>
+            特に、術者は手洗いを徹底するとともに、患者様ごとにグローブを交換して、診療にあたっています。<br>
+            診療器具は、すべて滅菌消毒を行っています。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+{% endblock %}

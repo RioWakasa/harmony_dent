@@ -1,0 +1,50 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'dent_site/css/sub.css' %}">
+{% endblock head %}
+
+{% block content %}
+<!-- タイトル -->
+<div class="pagetitle">
+  <h1>
+    <span class="jp">コンセプト</span>
+    <span class="en">concept</span>
+  </h1>
+</div>
+
+<!-- パンくずリスト -->
+<nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Concept</li>
+  </ol>
+</nav>
+
+<main>
+  <section class="container pt-60">
+    <h2 class="ttl">当院の理念</h2>
+    <h3>ミッション（使命）</h3>
+    <div class="row flex-row-reverse">
+      <figure class="col-md-12 col-lg-6 mb-3 circle"><img class="img-fluid" decoding="async" src="../media/photo/concept/concept.jpg" alt=""></figure>
+      <div class="col-md-12 col-lg-6">
+        <p>すべての来院される方に<span class="green">予防（ヘルスプロモーション）</span>の重要性を知っていただき、病気を起こすことのない健康なお口を維持していくことにより、<span class="green">生涯に渡り幸せな生活</span>を送っていただくことを使命としています。</p>
+      </div>
+    </div>
+    <h3>ポリシー（方針）</h3>
+    <ul class="point">
+      <li>患者様の立場に立った対応を行います。</li>
+      <li>来院された方の本当の思いをくみとり、個々の要望に沿えるよう、<span class="green">納得いくまでお話を聞いて診療方針を決定</span>しています。
+      </li>
+      <li>患者様と相対して、
+        <span class="green">同じ目線で問診</span>を行い、現在の口腔状態や治療方針を、分かりやすく丁寧に説明するよう心がけています。
+      </li>
+      <li>患者様の笑顔と感動があふれる歯科医院を目指します。</li>
+      <li>
+        <span class="green">痛みの少ない治療・なるべく歯を削らない治療・なるべく歯を抜かない治療</span>を目指します。</li>
+      <li>予防やメンテナンスに力を入れています。</li>
+    </ul>
+  </section>
+</main>
+{% endblock %}
