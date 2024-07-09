@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-uw+qxv7h_yc06y)jl%6l^2%3w08im2#h*ed@va&o5gfrb(u@fb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com', 'www.harmony-dent.com', 'harmony-dent']
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com', 'www.harmony-dent.com', 'harmony-dent.com']
 
 
 # Application definition
