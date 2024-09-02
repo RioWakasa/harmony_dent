@@ -23,7 +23,7 @@
         <h2 class="en green py-3">NEWS</h2>
         {% for content in contents %}
           <div>
-            <div class="row py-2">
+            <div class="row py-2 g-0">
               <time class="col-2 offset-1">{{ content.date }}</time>
               <a href="{% url 'dent_site:news_detail' content.pk %}" class="txt fw-bold col-8">{{ content.title }}</a>
             </div>
@@ -66,7 +66,7 @@
     <div class="treatment container">
       <h2 class="mb-5">こんな<span class="green">お悩み</span>はありませんか？</h2>
       <div class="row text-center">
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-6 col-lg-4">
           <div class="item mb-3">
             <a href="{% url 'dent_site:general' %}" class="item-thumb">
               <figure><img class="img-fluid" src="media/img/home/general.png"></figure>
@@ -75,7 +75,7 @@
             <h3>一般歯科</h3>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-6 col-lg-4">
           <div class="item mb-3">
             <a href="{% url 'dent_site:pediatric' %}" class="item-thumb">
               <figure><img class="img-fluid" src="media/img/home/pediatric.png"></figure>
@@ -84,7 +84,7 @@
             <h3>小児歯科</h3>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-6 col-lg-4">
           <div class="item mb-3">
             <a href="{% url 'dent_site:treatment' %}" class="item-thumb">
               <figure><img class="img-fluid" src="media/img/home/treatment.png"></figure>
@@ -93,7 +93,7 @@
             <h3>予防治療</h3>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-6 col-lg-4">
           <div class="item mb-3">
             <a href="{% url 'dent_site:cosmetic' %}" class="item-thumb">
               <figure><img class="img-fluid" src="media/img/home/cosmetic.png" style="padding: 10px;"></figure>
@@ -102,7 +102,7 @@
             <h3>審美治療・<br>ホワイトニング</h3>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-6 col-lg-4">
           <div class="item mb-3">
             <a href="{% url 'dent_site:orthodontics' %}" class="item-thumb">
               <figure><img class="img-fluid" src="media/img/home/orthodontics.png" style="padding: 20px 0;"></figure>
@@ -111,7 +111,7 @@
             <h3>矯正歯科</h3>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-6 col-lg-4">
           <div class="item mb-3">
             <a href="{% url 'dent_site:implant' %}" class="item-thumb">
               <figure><img class="img-fluid" src="media/img/home/implant.png" style="padding: 0 25px;"></figure>
@@ -149,7 +149,7 @@
     <div class="container">
       <h2 class="mb-5 red">院長・スタッフ紹介</h2>
       <div class="row flex-row-reverse">
-        <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" src="../media/photo/staff.jpg" alt="スタッフ写真"></figure>
+        <figure class="col-md-12 col-lg-6 mb-3"><img class="img-fluid" src="media/photo/staff.jpg" alt="スタッフ写真"></figure>
         <div class="col-md-12 col-lg-6">
           <p>当院は、日々技術を磨いて研鑽を重ね、学会などにも積極的に参加し、患者様に喜んでもらおうとみんなで協力している歯科医院です。<br>
           スタッフは皆前向きで明るく、やる気に満ち溢れています。</p>
