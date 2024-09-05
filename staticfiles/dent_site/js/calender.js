@@ -107,7 +107,7 @@ function setCalender2(){
 	if (month == 2 && ((year%4 == 0 && year%100 != 0) || year%400 == 0)) dateMax = 29;
 	
 	// 翌月の最初の日のみ曜日を設定(0:日 1:月 2:火 3:水 4:木 5:金 6:土)
-	var startDay = 1;
+	var startDay = 2;
 	
 	// 
 	var holidays = new Array();
