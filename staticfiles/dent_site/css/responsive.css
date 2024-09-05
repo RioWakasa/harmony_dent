@@ -171,7 +171,7 @@
     height: 40px;
   }
  /*メニューをページ下部に固定*/
- #sp-fixed-menu{
+ .for-sp{
   position: fixed;
   width: 100%;
   bottom: 0px;
@@ -180,14 +180,14 @@
   z-index: 99;
 }
 /*メニューを横並びにする*/
-#sp-fixed-menu ul{
+.for-sp ul{
   display: flex;
   list-style: none;
   padding:0;
   margin:0;
   width:100%;
 }
-#sp-fixed-menu li{
+.for-sp li{
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -197,15 +197,15 @@
   border-right: 1px solid #fff;
 }
 /*左側メニューを緑色に*/
-#sp-fixed-menu li:first-child{
+.for-sp li:first-child{
   background: #38b435;
 }
 /*左側メニューをオレンジ色に*/
-#sp-fixed-menu li:last-child{
+.for-sp li:last-child{
   background: #f3a324;
 }
 /*ボタンを調整*/
-#sp-fixed-menu li a{
+.for-sp li a{
   color: #fff;
   text-align: center;
   display:block;
