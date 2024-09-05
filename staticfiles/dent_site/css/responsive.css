@@ -170,8 +170,8 @@
   header {
     height: 40px;
   }
- /*メニューをページ下部に固定*/
- #sp-fixed-menu{
+  /*メニューをページ下部に固定*/
+#sp-fixed-menu{
   position: fixed;
   width: 100%;
   bottom: 0px;
